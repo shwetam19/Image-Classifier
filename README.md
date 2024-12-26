@@ -4,7 +4,7 @@ This project demonstrates how to build a state-of-the-art **image classification
 
 ---
 
-## **Dataset🌸**
+## **Dataset**
 
 The project uses the [Flowers 102 dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html), which contains images of 102 flower categories. The dataset is ideal for demonstrating the power of transfer learning and deep neural networks.
 
@@ -26,7 +26,7 @@ The project uses the [Flowers 102 dataset](https://www.robots.ox.ac.uk/~vgg/data
 
 ---
 
-# Usage
+## **Usage**
 
 ## 1. Training the Model
 Run the `train.py` script to train the model:
