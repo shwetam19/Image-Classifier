@@ -1,0 +1,2774 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>d412a18385ac4f3780aa93a765e9c31b</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="developing-an-ai-application" class="cell markdown">
+<h1>Developing an AI application</h1>
+<p>Going forward, AI algorithms will be incorporated into more and more
+everyday applications. For example, you might want to include an image
+classifier in a smart phone app. To do this, you'd use a deep learning
+model trained on hundreds of thousands of images as part of the overall
+application architecture. A large part of software development in the
+future will be using these types of models as common parts of
+applications.</p>
+<p>In this project, you'll train an image classifier to recognize
+different species of flowers. You can imagine using something like this
+in a phone app that tells you the name of the flower your camera is
+looking at. In practice you'd train this classifier, then export it for
+use in your application. We'll be using <a
+href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html">this
+dataset</a> of 102 flower categories, you can see a few examples
+below.</p>
+<p><img src='assets/Flowers.png' width=500px></p>
+<p>The project is broken down into multiple steps:</p>
+<ul>
+<li>Load and preprocess the image dataset</li>
+<li>Train the image classifier on your dataset</li>
+<li>Use the trained classifier to predict image content</li>
+</ul>
+<p>We'll lead you through each part which you'll implement in
+Python.</p>
+<p>When you've completed this project, you'll have an application that
+can be trained on any set of labeled images. Here your network will be
+learning about flowers and end up as a command line application. But,
+what you do with your new skills depends on your imagination and effort
+in building a dataset. For example, imagine an app where you take a
+picture of a car, it tells you what the make and model is, then looks up
+information about it. Go build your own dataset and make something
+new.</p>
+<p>First up is importing the packages you'll need. It's good practice to
+keep all the imports at the beginning of your code. As you work through
+this notebook and find you need to import a package, make sure to add
+the import up here.</p>
+</section>
+<div class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Imports here</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> nn</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> tensor</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> optim</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.autograd <span class="im">import</span> Variable</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> datasets, transforms</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision.models <span class="im">as</span> models</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> argparse</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> collections <span class="im">import</span> OrderedDict</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> PIL</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span></code></pre></div>
+</div>
+<section id="load-the-data" class="cell markdown">
+<h2>Load the data</h2>
+<p>Here you'll use <code>torchvision</code> to load the data (<a
+href="http://pytorch.org/docs/0.3.0/torchvision/index.html">documentation</a>).
+The data should be included alongside this notebook, otherwise you can
+<a
+href="https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz">download
+it here</a>. The dataset is split into three parts, training,
+validation, and testing. For the training, you'll want to apply
+transformations such as random scaling, cropping, and flipping. This
+will help the network generalize leading to better performance. You'll
+also need to make sure the input data is resized to 224x224 pixels as
+required by the pre-trained networks.</p>
+<p>The validation and testing sets are used to measure the model's
+performance on data it hasn't seen yet. For this you don't want any
+scaling or rotation transformations, but you'll need to resize then crop
+the images to the appropriate size.</p>
+<p>The pre-trained networks you'll use were trained on the ImageNet
+dataset where each color channel was normalized separately. For all
+three sets you'll need to normalize the means and standard deviations of
+the images to what the network expects. For the means, it's
+<code>[0.485, 0.456, 0.406]</code> and for the standard deviations
+<code>[0.229, 0.224, 0.225]</code>, calculated from the ImageNet images.
+These values will shift each color channel to be centered at 0 and range
+from -1 to 1.</p>
+</section>
+<div class="cell code" data-execution_count="2">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> <span class="st">&#39;flowers&#39;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/train&#39;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>valid_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/valid&#39;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>test_dir <span class="op">=</span> data_dir <span class="op">+</span> <span class="st">&#39;/test&#39;</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="24">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Define your transforms for the training, validation, and testing sets</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the transformations</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>data_transforms <span class="op">=</span> {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;train&#39;</span>: transforms.Compose([</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        transforms.RandomResizedCrop(<span class="dv">224</span>),  <span class="co"># Randomly crop and resize to 224x224</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        transforms.RandomHorizontalFlip(),  <span class="co"># Randomly flip images horizontally</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        transforms.ToTensor(),  <span class="co"># Convert images to tensors</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])  <span class="co"># Normalize with ImageNet stats</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    ]),</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;valid&#39;</span>: transforms.Compose([</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        transforms.Resize(<span class="dv">256</span>),  <span class="co"># Resize to 256 pixels on the shorter side</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        transforms.CenterCrop(<span class="dv">224</span>),  <span class="co"># Crop the center to 224x224</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        transforms.ToTensor(),</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>        transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    ]),</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;test&#39;</span>: transforms.Compose([</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        transforms.Resize(<span class="dv">256</span>),</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>        transforms.CenterCrop(<span class="dv">224</span>),</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>        transforms.ToTensor(),</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    ])</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the datasets with ImageFolder</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>image_datasets <span class="op">=</span> {</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;train&#39;</span>: datasets.ImageFolder(train_dir, transform<span class="op">=</span>data_transforms[<span class="st">&#39;train&#39;</span>]),</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;valid&#39;</span>: datasets.ImageFolder(valid_dir, transform<span class="op">=</span>data_transforms[<span class="st">&#39;valid&#39;</span>]),</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;test&#39;</span>: datasets.ImageFolder(test_dir, transform<span class="op">=</span>data_transforms[<span class="st">&#39;test&#39;</span>])</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Using the image datasets and the trainforms, define the dataloaders</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>train_loader <span class="op">=</span> torch.utils.data.DataLoader(image_datasets[<span class="st">&#39;train&#39;</span>], batch_size<span class="op">=</span><span class="dv">64</span>, shuffle<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>validation_loader <span class="op">=</span> torch.utils.data.DataLoader(image_datasets[<span class="st">&#39;valid&#39;</span>], batch_size <span class="op">=</span><span class="dv">64</span>,shuffle <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>test_loader <span class="op">=</span> torch.utils.data.DataLoader(image_datasets[<span class="st">&#39;test&#39;</span>], batch_size <span class="op">=</span> <span class="dv">64</span>, shuffle <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Size of Loaders, to be used for calculating Average Loss and Accuracy</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>train_Loader_size <span class="op">=</span> <span class="bu">len</span>(train_loader)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>valid_Loader_size <span class="op">=</span> <span class="bu">len</span>(validation_loader)</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>test_loader_size <span class="op">=</span> <span class="bu">len</span>(test_loader)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the train, validation and test set data sizes</span></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>train_Loader_size, valid_Loader_size, test_loader_size</span></code></pre></div>
+<div class="output execute_result" data-execution_count="24">
+<pre><code>(103, 13, 13)</code></pre>
+</div>
+</div>
+<section id="label-mapping" class="cell markdown">
+<h3>Label mapping</h3>
+<p>You'll also need to load in a mapping from category label to category
+name. You can find this in the file <code>cat_to_name.json</code>. It's
+a JSON object which you can read in with the <a
+href="https://docs.python.org/2/library/json.html"><code>json</code>
+module</a>. This will give you a dictionary mapping the integer encoded
+categories to the actual names of the flowers.</p>
+</section>
+<div class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&#39;cat_to_name.json&#39;</span>, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> f:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    cat_to_name <span class="op">=</span> json.load(f)</span></code></pre></div>
+</div>
+<section id="building-and-training-the-classifier"
+class="cell markdown">
+<h1>Building and training the classifier</h1>
+<p>Now that the data is ready, it's time to build and train the
+classifier. As usual, you should use one of the pretrained models from
+<code>torchvision.models</code> to get the image features. Build and
+train a new feed-forward classifier using those features.</p>
+<p>We're going to leave this part up to you. Refer to <a
+href="https://review.udacity.com/#!/rubrics/1663/view">the rubric</a>
+for guidance on successfully completing this section. Things you'll need
+to do:</p>
+<ul>
+<li>Load a <a
+href="http://pytorch.org/docs/master/torchvision/models.html">pre-trained
+network</a> (If you need a starting point, the VGG networks work great
+and are straightforward to use)</li>
+<li>Define a new, untrained feed-forward network as a classifier, using
+ReLU activations and dropout</li>
+<li>Train the classifier layers using backpropagation using the
+pre-trained network to get the features</li>
+<li>Track the loss and accuracy on the validation set to determine the
+best hyperparameters</li>
+</ul>
+<p>We've left a cell open for you below, but use as many as you need.
+Our advice is to break the problem up into smaller parts you can run
+separately. Check that each part is doing what you expect, then move on
+to the next. You'll likely find that as you work through each part,
+you'll need to go back and modify your previous code. This is totally
+normal!</p>
+<p>When training make sure you're updating only the weights of the
+feed-forward network. You should be able to get the validation accuracy
+above 70% if you build everything right. Make sure to try different
+hyperparameters (learning rate, units in the classifier, epochs, etc) to
+find the best model. Save those hyperparameters to use as default values
+in the next part of the project.</p>
+<p>One last important tip if you're using the workspace to run your
+code: To avoid having your workspace disconnect during the long-running
+tasks in this notebook, please read in the earlier page in this lesson
+called Intro to GPU Workspaces about Keeping Your Session Active. You'll
+want to include code from the workspace_utils.py module.</p>
+<p><strong>Note for Workspace users:</strong> If your network is over 1
+GB when saved as a checkpoint, there might be issues with saving backups
+in your workspace. Typically this happens with wide dense layers after
+the convolutional layers. If your saved checkpoint is larger than 1 GB
+(you can open a terminal and check with <code>ls -lh</code>), you should
+reduce the size of your hidden layers and train again.</p>
+</section>
+<div class="cell code" data-execution_count="20">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Build and train your network</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load a pre-trained network (VGG16)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> models.vgg16(pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Freeze the parameters of the feature extractor</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> param <span class="kw">in</span> model.features.parameters():</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    param.requires_grad <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a new, untrained feed-forward classifier</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Classifier(nn.Module):</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, input_size, hidden_units, output_size, dropout_prob<span class="op">=</span><span class="fl">0.2</span>):</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc1 <span class="op">=</span> nn.Linear(input_size, hidden_units)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fc2 <span class="op">=</span> nn.Linear(hidden_units, output_size)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.dropout <span class="op">=</span> nn.Dropout(dropout_prob)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> F.relu(<span class="va">self</span>.fc1(x))</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.dropout(x)</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        x <span class="op">=</span> <span class="va">self</span>.fc2(x)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> F.log_softmax(x, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace the pre-trained classifier with the new classifier</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>input_size <span class="op">=</span> model.classifier[<span class="dv">0</span>].in_features</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>hidden_units <span class="op">=</span> <span class="dv">512</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>output_size <span class="op">=</span> <span class="bu">len</span>(image_datasets[<span class="st">&#39;train&#39;</span>].classes)  <span class="co"># Number of output classes</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>model.classifier <span class="op">=</span> Classifier(input_size, hidden_units, output_size)</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the loss function and optimizer</span></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>criterion <span class="op">=</span> nn.NLLLoss()</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>optimizer <span class="op">=</span> optim.Adam(model.classifier.parameters(), lr<span class="op">=</span><span class="fl">0.003</span>)</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Move the model to the GPU if available</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>device <span class="op">=</span> torch.device(<span class="st">&quot;cuda&quot;</span> <span class="cf">if</span> torch.cuda.is_available() <span class="cf">else</span> <span class="st">&quot;cpu&quot;</span>)</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>model.to(device)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>Downloading: &quot;https://download.pytorch.org/models/vgg16-397923af.pth&quot; to /root/.torch/models/vgg16-397923af.pth
+100%|██████████| 553433881/553433881 [00:10&lt;00:00, 53388804.49it/s] 
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="25">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>epochs<span class="op">=</span><span class="dv">18</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>train_loader <span class="op">=</span> dataloaders[<span class="st">&#39;train&#39;</span>]</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>valid_loader <span class="op">=</span> dataloaders[<span class="st">&#39;valid&#39;</span>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(epochs):</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    model.train()</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    running_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> inputs, labels <span class="kw">in</span> train_loader:</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        inputs, labels <span class="op">=</span> inputs.to(device), labels.to(device)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        log_ps <span class="op">=</span> model(inputs)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> criterion(log_ps, labels)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>        running_loss <span class="op">+=</span> loss.item()</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>        </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch: 1/18
+Batch no: 000, Loss on trainig: 4.6314, Accuracy: 0.0000
+Batch no: 001, Loss on trainig: 4.6491, Accuracy: 0.0000
+Batch no: 002, Loss on trainig: 4.5881, Accuracy: 0.0000
+Batch no: 003, Loss on trainig: 4.6597, Accuracy: 0.0000
+Batch no: 004, Loss on trainig: 4.5951, Accuracy: 0.0000
+Batch no: 005, Loss on trainig: 4.6500, Accuracy: 0.0156
+Batch no: 006, Loss on trainig: 4.6152, Accuracy: 0.0156
+Batch no: 007, Loss on trainig: 4.5447, Accuracy: 0.0156
+Batch no: 008, Loss on trainig: 4.5470, Accuracy: 0.0156
+Batch no: 009, Loss on trainig: 4.5619, Accuracy: 0.0469
+Batch no: 010, Loss on trainig: 4.5272, Accuracy: 0.0156
+Batch no: 011, Loss on trainig: 4.6273, Accuracy: 0.0312
+Batch no: 012, Loss on trainig: 4.5950, Accuracy: 0.0469
+Batch no: 013, Loss on trainig: 4.5699, Accuracy: 0.0156
+Batch no: 014, Loss on trainig: 4.5900, Accuracy: 0.0312
+Batch no: 015, Loss on trainig: 4.5764, Accuracy: 0.0625
+Batch no: 016, Loss on trainig: 4.5649, Accuracy: 0.0000
+Batch no: 017, Loss on trainig: 4.3402, Accuracy: 0.0469
+Batch no: 018, Loss on trainig: 4.5318, Accuracy: 0.0156
+Batch no: 019, Loss on trainig: 4.5151, Accuracy: 0.0156
+Batch no: 020, Loss on trainig: 4.5085, Accuracy: 0.0312
+Batch no: 021, Loss on trainig: 4.4817, Accuracy: 0.0469
+Batch no: 022, Loss on trainig: 4.4966, Accuracy: 0.0781
+Batch no: 023, Loss on trainig: 4.4398, Accuracy: 0.0781
+Batch no: 024, Loss on trainig: 4.3620, Accuracy: 0.1094
+Batch no: 025, Loss on trainig: 4.4724, Accuracy: 0.0312
+Batch no: 026, Loss on trainig: 4.3317, Accuracy: 0.1094
+Batch no: 027, Loss on trainig: 4.4178, Accuracy: 0.0625
+Batch no: 028, Loss on trainig: 4.2688, Accuracy: 0.1250
+Batch no: 029, Loss on trainig: 4.4090, Accuracy: 0.0625
+Batch no: 030, Loss on trainig: 4.3270, Accuracy: 0.0781
+Batch no: 031, Loss on trainig: 4.2372, Accuracy: 0.1094
+Batch no: 032, Loss on trainig: 4.1677, Accuracy: 0.0469
+Batch no: 033, Loss on trainig: 4.1432, Accuracy: 0.1094
+Batch no: 034, Loss on trainig: 4.2731, Accuracy: 0.1250
+Batch no: 035, Loss on trainig: 4.3806, Accuracy: 0.1250
+Batch no: 036, Loss on trainig: 4.2872, Accuracy: 0.0781
+Batch no: 037, Loss on trainig: 4.4264, Accuracy: 0.0781
+Batch no: 038, Loss on trainig: 4.2264, Accuracy: 0.1406
+Batch no: 039, Loss on trainig: 4.1319, Accuracy: 0.1406
+Batch no: 040, Loss on trainig: 4.2945, Accuracy: 0.0625
+Batch no: 041, Loss on trainig: 4.1362, Accuracy: 0.0469
+Batch no: 042, Loss on trainig: 4.0019, Accuracy: 0.1406
+Batch no: 043, Loss on trainig: 3.9311, Accuracy: 0.1562
+Batch no: 044, Loss on trainig: 4.2045, Accuracy: 0.1406
+Batch no: 045, Loss on trainig: 4.1297, Accuracy: 0.1094
+Batch no: 046, Loss on trainig: 3.9329, Accuracy: 0.1406
+Batch no: 047, Loss on trainig: 4.2204, Accuracy: 0.0938
+Batch no: 048, Loss on trainig: 4.4041, Accuracy: 0.0625
+Batch no: 049, Loss on trainig: 4.1338, Accuracy: 0.1094
+Batch no: 050, Loss on trainig: 4.1562, Accuracy: 0.0938
+Batch no: 051, Loss on trainig: 4.0148, Accuracy: 0.1250
+Batch no: 052, Loss on trainig: 3.9696, Accuracy: 0.1094
+Batch no: 053, Loss on trainig: 4.0993, Accuracy: 0.1094
+Batch no: 054, Loss on trainig: 4.0817, Accuracy: 0.1094
+Batch no: 055, Loss on trainig: 4.0953, Accuracy: 0.1719
+Batch no: 056, Loss on trainig: 3.8460, Accuracy: 0.1875
+Batch no: 057, Loss on trainig: 3.8549, Accuracy: 0.1562
+Batch no: 058, Loss on trainig: 3.9079, Accuracy: 0.1250
+Batch no: 059, Loss on trainig: 3.8943, Accuracy: 0.1094
+Batch no: 060, Loss on trainig: 3.8715, Accuracy: 0.1406
+Batch no: 061, Loss on trainig: 3.8743, Accuracy: 0.1719
+Batch no: 062, Loss on trainig: 3.8874, Accuracy: 0.1406
+Batch no: 063, Loss on trainig: 3.7168, Accuracy: 0.2031
+Batch no: 064, Loss on trainig: 3.9018, Accuracy: 0.1406
+Batch no: 065, Loss on trainig: 3.6470, Accuracy: 0.1250
+Batch no: 066, Loss on trainig: 3.8618, Accuracy: 0.1406
+Batch no: 067, Loss on trainig: 3.5137, Accuracy: 0.2031
+Batch no: 068, Loss on trainig: 3.4500, Accuracy: 0.2188
+Batch no: 069, Loss on trainig: 3.6078, Accuracy: 0.2031
+Batch no: 070, Loss on trainig: 3.8475, Accuracy: 0.1719
+Batch no: 071, Loss on trainig: 3.8241, Accuracy: 0.1875
+Batch no: 072, Loss on trainig: 3.5887, Accuracy: 0.1719
+Batch no: 073, Loss on trainig: 3.6209, Accuracy: 0.2031
+Batch no: 074, Loss on trainig: 3.1120, Accuracy: 0.2812
+Batch no: 075, Loss on trainig: 3.6289, Accuracy: 0.1719
+Batch no: 076, Loss on trainig: 3.5904, Accuracy: 0.2031
+Batch no: 077, Loss on trainig: 3.5753, Accuracy: 0.2188
+Batch no: 078, Loss on trainig: 3.6793, Accuracy: 0.1719
+Batch no: 079, Loss on trainig: 3.5486, Accuracy: 0.1875
+Batch no: 080, Loss on trainig: 3.9307, Accuracy: 0.1250
+Batch no: 081, Loss on trainig: 3.3832, Accuracy: 0.2656
+Batch no: 082, Loss on trainig: 3.3222, Accuracy: 0.2344
+Batch no: 083, Loss on trainig: 3.2966, Accuracy: 0.2500
+Batch no: 084, Loss on trainig: 3.4366, Accuracy: 0.2031
+Batch no: 085, Loss on trainig: 3.5223, Accuracy: 0.2031
+Batch no: 086, Loss on trainig: 3.5695, Accuracy: 0.1562
+Batch no: 087, Loss on trainig: 3.1347, Accuracy: 0.2656
+Batch no: 088, Loss on trainig: 3.1037, Accuracy: 0.2969
+Batch no: 089, Loss on trainig: 3.2009, Accuracy: 0.2500
+Batch no: 090, Loss on trainig: 3.3632, Accuracy: 0.1719
+Batch no: 091, Loss on trainig: 2.8361, Accuracy: 0.3281
+Batch no: 092, Loss on trainig: 3.3999, Accuracy: 0.2500
+Batch no: 093, Loss on trainig: 3.1741, Accuracy: 0.2188
+Batch no: 094, Loss on trainig: 3.1603, Accuracy: 0.2812
+Batch no: 095, Loss on trainig: 3.0998, Accuracy: 0.2812
+Batch no: 096, Loss on trainig: 2.8428, Accuracy: 0.3125
+Batch no: 097, Loss on trainig: 3.0691, Accuracy: 0.2812
+Batch no: 098, Loss on trainig: 3.4793, Accuracy: 0.1719
+Batch no: 099, Loss on trainig: 3.4625, Accuracy: 0.2031
+Batch no: 100, Loss on trainig: 2.9657, Accuracy: 0.2812
+Batch no: 101, Loss on trainig: 3.3228, Accuracy: 0.1719
+Batch no: 102, Loss on trainig: 2.8879, Accuracy: 0.3750
+Epoch: 2/18
+Batch no: 000, Loss on trainig: 3.0258, Accuracy: 0.2344
+Batch no: 001, Loss on trainig: 3.4467, Accuracy: 0.2344
+Batch no: 002, Loss on trainig: 2.9471, Accuracy: 0.2656
+Batch no: 003, Loss on trainig: 3.0254, Accuracy: 0.2344
+Batch no: 004, Loss on trainig: 2.9908, Accuracy: 0.2969
+Batch no: 005, Loss on trainig: 2.7299, Accuracy: 0.4062
+Batch no: 006, Loss on trainig: 2.8888, Accuracy: 0.2500
+Batch no: 007, Loss on trainig: 3.0569, Accuracy: 0.2812
+Batch no: 008, Loss on trainig: 2.9704, Accuracy: 0.2656
+Batch no: 009, Loss on trainig: 2.8391, Accuracy: 0.3125
+Batch no: 010, Loss on trainig: 3.1745, Accuracy: 0.2656
+Batch no: 011, Loss on trainig: 3.1778, Accuracy: 0.2500
+Batch no: 012, Loss on trainig: 2.8603, Accuracy: 0.2812
+Batch no: 013, Loss on trainig: 2.6398, Accuracy: 0.3438
+Batch no: 014, Loss on trainig: 2.4537, Accuracy: 0.4375
+Batch no: 015, Loss on trainig: 2.8758, Accuracy: 0.2812
+Batch no: 016, Loss on trainig: 3.0769, Accuracy: 0.2656
+Batch no: 017, Loss on trainig: 2.6913, Accuracy: 0.2812
+Batch no: 018, Loss on trainig: 2.6384, Accuracy: 0.2969
+Batch no: 019, Loss on trainig: 3.1547, Accuracy: 0.1875
+Batch no: 020, Loss on trainig: 3.0739, Accuracy: 0.2031
+Batch no: 021, Loss on trainig: 3.2789, Accuracy: 0.1719
+Batch no: 022, Loss on trainig: 2.9451, Accuracy: 0.3438
+Batch no: 023, Loss on trainig: 2.6883, Accuracy: 0.2812
+Batch no: 024, Loss on trainig: 2.6879, Accuracy: 0.3594
+Batch no: 025, Loss on trainig: 2.9081, Accuracy: 0.3438
+Batch no: 026, Loss on trainig: 2.6432, Accuracy: 0.3594
+Batch no: 027, Loss on trainig: 2.9713, Accuracy: 0.2344
+Batch no: 028, Loss on trainig: 2.8380, Accuracy: 0.2969
+Batch no: 029, Loss on trainig: 2.7107, Accuracy: 0.2500
+Batch no: 030, Loss on trainig: 2.9412, Accuracy: 0.2188
+Batch no: 031, Loss on trainig: 2.9744, Accuracy: 0.2656
+Batch no: 032, Loss on trainig: 2.6509, Accuracy: 0.2969
+Batch no: 033, Loss on trainig: 2.3903, Accuracy: 0.3594
+Batch no: 034, Loss on trainig: 2.6816, Accuracy: 0.2812
+Batch no: 035, Loss on trainig: 2.6152, Accuracy: 0.3438
+Batch no: 036, Loss on trainig: 2.9861, Accuracy: 0.2500
+Batch no: 037, Loss on trainig: 2.6694, Accuracy: 0.2812
+Batch no: 038, Loss on trainig: 2.7777, Accuracy: 0.3281
+Batch no: 039, Loss on trainig: 3.1614, Accuracy: 0.2344
+Batch no: 040, Loss on trainig: 2.8568, Accuracy: 0.2812
+Batch no: 041, Loss on trainig: 3.3093, Accuracy: 0.2188
+Batch no: 042, Loss on trainig: 2.6721, Accuracy: 0.3750
+Batch no: 043, Loss on trainig: 2.5412, Accuracy: 0.3125
+Batch no: 044, Loss on trainig: 2.6858, Accuracy: 0.3438
+Batch no: 045, Loss on trainig: 2.8053, Accuracy: 0.3438
+Batch no: 046, Loss on trainig: 2.7483, Accuracy: 0.2812
+Batch no: 047, Loss on trainig: 2.8191, Accuracy: 0.3125
+Batch no: 048, Loss on trainig: 2.4786, Accuracy: 0.3125
+Batch no: 049, Loss on trainig: 2.9897, Accuracy: 0.3281
+Batch no: 050, Loss on trainig: 2.8796, Accuracy: 0.3438
+Batch no: 051, Loss on trainig: 2.6843, Accuracy: 0.3750
+Batch no: 052, Loss on trainig: 2.4636, Accuracy: 0.3281
+Batch no: 053, Loss on trainig: 2.9818, Accuracy: 0.2500
+Batch no: 054, Loss on trainig: 2.6470, Accuracy: 0.2969
+Batch no: 055, Loss on trainig: 2.5431, Accuracy: 0.3281
+Batch no: 056, Loss on trainig: 2.8907, Accuracy: 0.1875
+Batch no: 057, Loss on trainig: 2.9170, Accuracy: 0.3281
+Batch no: 058, Loss on trainig: 2.8630, Accuracy: 0.2656
+Batch no: 059, Loss on trainig: 3.0625, Accuracy: 0.2188
+Batch no: 060, Loss on trainig: 2.3969, Accuracy: 0.4219
+Batch no: 061, Loss on trainig: 2.7148, Accuracy: 0.3438
+Batch no: 062, Loss on trainig: 2.7157, Accuracy: 0.2812
+Batch no: 063, Loss on trainig: 2.6924, Accuracy: 0.3438
+Batch no: 064, Loss on trainig: 2.5067, Accuracy: 0.2969
+Batch no: 065, Loss on trainig: 2.9670, Accuracy: 0.2188
+Batch no: 066, Loss on trainig: 2.2096, Accuracy: 0.4062
+Batch no: 067, Loss on trainig: 2.9575, Accuracy: 0.2656
+Batch no: 068, Loss on trainig: 2.7900, Accuracy: 0.3281
+Batch no: 069, Loss on trainig: 2.4590, Accuracy: 0.3750
+Batch no: 070, Loss on trainig: 2.7785, Accuracy: 0.3750
+Batch no: 071, Loss on trainig: 2.5923, Accuracy: 0.2969
+Batch no: 072, Loss on trainig: 2.6649, Accuracy: 0.3750
+Batch no: 073, Loss on trainig: 2.3225, Accuracy: 0.3750
+Batch no: 074, Loss on trainig: 2.6880, Accuracy: 0.2656
+Batch no: 075, Loss on trainig: 2.3338, Accuracy: 0.4531
+Batch no: 076, Loss on trainig: 2.7160, Accuracy: 0.3281
+Batch no: 077, Loss on trainig: 2.4873, Accuracy: 0.3906
+Batch no: 078, Loss on trainig: 2.8158, Accuracy: 0.2344
+Batch no: 079, Loss on trainig: 2.5364, Accuracy: 0.3281
+Batch no: 080, Loss on trainig: 2.5405, Accuracy: 0.3438
+Batch no: 081, Loss on trainig: 2.6184, Accuracy: 0.3594
+Batch no: 082, Loss on trainig: 2.2825, Accuracy: 0.3906
+Batch no: 083, Loss on trainig: 2.4745, Accuracy: 0.3906
+Batch no: 084, Loss on trainig: 2.5228, Accuracy: 0.3281
+Batch no: 085, Loss on trainig: 2.3085, Accuracy: 0.4062
+Batch no: 086, Loss on trainig: 2.4650, Accuracy: 0.3750
+Batch no: 087, Loss on trainig: 2.6251, Accuracy: 0.2656
+Batch no: 088, Loss on trainig: 2.4122, Accuracy: 0.3125
+Batch no: 089, Loss on trainig: 2.4765, Accuracy: 0.3125
+Batch no: 090, Loss on trainig: 2.6661, Accuracy: 0.3750
+Batch no: 091, Loss on trainig: 2.4312, Accuracy: 0.3594
+Batch no: 092, Loss on trainig: 2.4829, Accuracy: 0.4062
+Batch no: 093, Loss on trainig: 2.4256, Accuracy: 0.3281
+Batch no: 094, Loss on trainig: 2.7439, Accuracy: 0.3125
+Batch no: 095, Loss on trainig: 2.3810, Accuracy: 0.3906
+Batch no: 096, Loss on trainig: 2.3740, Accuracy: 0.3594
+Batch no: 097, Loss on trainig: 2.2591, Accuracy: 0.3438
+Batch no: 098, Loss on trainig: 2.2801, Accuracy: 0.3438
+Batch no: 099, Loss on trainig: 2.3966, Accuracy: 0.3906
+Batch no: 100, Loss on trainig: 2.5514, Accuracy: 0.2969
+Batch no: 101, Loss on trainig: 2.3090, Accuracy: 0.3906
+Batch no: 102, Loss on trainig: 2.7941, Accuracy: 0.2500
+Epoch: 3/18
+Batch no: 000, Loss on trainig: 2.1950, Accuracy: 0.4219
+Batch no: 001, Loss on trainig: 2.4360, Accuracy: 0.3906
+Batch no: 002, Loss on trainig: 2.1166, Accuracy: 0.4531
+Batch no: 003, Loss on trainig: 2.3074, Accuracy: 0.3125
+Batch no: 004, Loss on trainig: 2.0356, Accuracy: 0.4844
+Batch no: 005, Loss on trainig: 2.1305, Accuracy: 0.4531
+Batch no: 006, Loss on trainig: 2.5452, Accuracy: 0.4062
+Batch no: 007, Loss on trainig: 2.2105, Accuracy: 0.4219
+Batch no: 008, Loss on trainig: 2.1783, Accuracy: 0.4375
+Batch no: 009, Loss on trainig: 2.1998, Accuracy: 0.4219
+Batch no: 010, Loss on trainig: 2.3311, Accuracy: 0.3750
+Batch no: 011, Loss on trainig: 2.0879, Accuracy: 0.4531
+Batch no: 012, Loss on trainig: 2.7428, Accuracy: 0.2969
+Batch no: 013, Loss on trainig: 2.9058, Accuracy: 0.2031
+Batch no: 014, Loss on trainig: 2.3286, Accuracy: 0.3594
+Batch no: 015, Loss on trainig: 2.2999, Accuracy: 0.3438
+Batch no: 016, Loss on trainig: 2.5684, Accuracy: 0.2969
+Batch no: 017, Loss on trainig: 2.4718, Accuracy: 0.3594
+Batch no: 018, Loss on trainig: 2.3229, Accuracy: 0.3906
+Batch no: 019, Loss on trainig: 2.5611, Accuracy: 0.3281
+Batch no: 020, Loss on trainig: 2.2994, Accuracy: 0.3438
+Batch no: 021, Loss on trainig: 2.1144, Accuracy: 0.4219
+Batch no: 022, Loss on trainig: 2.3845, Accuracy: 0.3594
+Batch no: 023, Loss on trainig: 2.2876, Accuracy: 0.3594
+Batch no: 024, Loss on trainig: 2.7929, Accuracy: 0.2656
+Batch no: 025, Loss on trainig: 2.2994, Accuracy: 0.4219
+Batch no: 026, Loss on trainig: 2.2566, Accuracy: 0.4219
+Batch no: 027, Loss on trainig: 2.4357, Accuracy: 0.3281
+Batch no: 028, Loss on trainig: 1.6531, Accuracy: 0.5938
+Batch no: 029, Loss on trainig: 2.3572, Accuracy: 0.3750
+Batch no: 030, Loss on trainig: 2.3596, Accuracy: 0.3906
+Batch no: 031, Loss on trainig: 2.7594, Accuracy: 0.3594
+Batch no: 032, Loss on trainig: 2.0667, Accuracy: 0.4219
+Batch no: 033, Loss on trainig: 2.7109, Accuracy: 0.2969
+Batch no: 034, Loss on trainig: 2.4132, Accuracy: 0.3125
+Batch no: 035, Loss on trainig: 2.1722, Accuracy: 0.4219
+Batch no: 036, Loss on trainig: 1.9690, Accuracy: 0.5469
+Batch no: 037, Loss on trainig: 2.3039, Accuracy: 0.4688
+Batch no: 038, Loss on trainig: 2.1039, Accuracy: 0.4375
+Batch no: 039, Loss on trainig: 2.1003, Accuracy: 0.3906
+Batch no: 040, Loss on trainig: 2.0097, Accuracy: 0.4531
+Batch no: 041, Loss on trainig: 2.1143, Accuracy: 0.4062
+Batch no: 042, Loss on trainig: 1.9167, Accuracy: 0.4375
+Batch no: 043, Loss on trainig: 2.3976, Accuracy: 0.3750
+Batch no: 044, Loss on trainig: 2.1269, Accuracy: 0.3750
+Batch no: 045, Loss on trainig: 2.3512, Accuracy: 0.4375
+Batch no: 046, Loss on trainig: 2.3219, Accuracy: 0.3906
+Batch no: 047, Loss on trainig: 1.8225, Accuracy: 0.4844
+Batch no: 048, Loss on trainig: 2.2484, Accuracy: 0.4531
+Batch no: 049, Loss on trainig: 1.9557, Accuracy: 0.4375
+Batch no: 050, Loss on trainig: 2.1374, Accuracy: 0.4219
+Batch no: 051, Loss on trainig: 2.1789, Accuracy: 0.4375
+Batch no: 052, Loss on trainig: 2.3953, Accuracy: 0.3594
+Batch no: 053, Loss on trainig: 1.9476, Accuracy: 0.4844
+Batch no: 054, Loss on trainig: 2.2341, Accuracy: 0.3750
+Batch no: 055, Loss on trainig: 2.6795, Accuracy: 0.3281
+Batch no: 056, Loss on trainig: 2.1566, Accuracy: 0.4375
+Batch no: 057, Loss on trainig: 2.1568, Accuracy: 0.3438
+Batch no: 058, Loss on trainig: 2.7053, Accuracy: 0.2812
+Batch no: 059, Loss on trainig: 1.6382, Accuracy: 0.5156
+Batch no: 060, Loss on trainig: 2.5302, Accuracy: 0.3281
+Batch no: 061, Loss on trainig: 2.1553, Accuracy: 0.3906
+Batch no: 062, Loss on trainig: 2.1943, Accuracy: 0.4062
+Batch no: 063, Loss on trainig: 2.3748, Accuracy: 0.2500
+Batch no: 064, Loss on trainig: 2.3948, Accuracy: 0.3594
+Batch no: 065, Loss on trainig: 2.2763, Accuracy: 0.4375
+Batch no: 066, Loss on trainig: 2.1199, Accuracy: 0.4062
+Batch no: 067, Loss on trainig: 2.1834, Accuracy: 0.4062
+Batch no: 068, Loss on trainig: 2.7464, Accuracy: 0.3125
+Batch no: 069, Loss on trainig: 2.0535, Accuracy: 0.4062
+Batch no: 070, Loss on trainig: 2.1623, Accuracy: 0.4688
+Batch no: 071, Loss on trainig: 2.2276, Accuracy: 0.3906
+Batch no: 072, Loss on trainig: 2.1103, Accuracy: 0.4375
+Batch no: 073, Loss on trainig: 2.4662, Accuracy: 0.3750
+Batch no: 074, Loss on trainig: 1.9473, Accuracy: 0.5312
+Batch no: 075, Loss on trainig: 1.9717, Accuracy: 0.4844
+Batch no: 076, Loss on trainig: 2.3299, Accuracy: 0.4375
+Batch no: 077, Loss on trainig: 2.3037, Accuracy: 0.4062
+Batch no: 078, Loss on trainig: 2.0877, Accuracy: 0.4219
+Batch no: 079, Loss on trainig: 1.9154, Accuracy: 0.5156
+Batch no: 080, Loss on trainig: 1.9437, Accuracy: 0.4375
+Batch no: 081, Loss on trainig: 2.0731, Accuracy: 0.4062
+Batch no: 082, Loss on trainig: 2.3503, Accuracy: 0.4062
+Batch no: 083, Loss on trainig: 2.2541, Accuracy: 0.4062
+Batch no: 084, Loss on trainig: 2.3420, Accuracy: 0.3750
+Batch no: 085, Loss on trainig: 2.3678, Accuracy: 0.3438
+Batch no: 086, Loss on trainig: 2.1691, Accuracy: 0.4688
+Batch no: 087, Loss on trainig: 2.2123, Accuracy: 0.3906
+Batch no: 088, Loss on trainig: 2.4939, Accuracy: 0.3594
+Batch no: 089, Loss on trainig: 1.8335, Accuracy: 0.4375
+Batch no: 090, Loss on trainig: 2.0211, Accuracy: 0.5000
+Batch no: 091, Loss on trainig: 2.3878, Accuracy: 0.3750
+Batch no: 092, Loss on trainig: 2.2887, Accuracy: 0.3750
+Batch no: 093, Loss on trainig: 1.9651, Accuracy: 0.4375
+Batch no: 094, Loss on trainig: 1.9814, Accuracy: 0.4219
+Batch no: 095, Loss on trainig: 2.1378, Accuracy: 0.5000
+Batch no: 096, Loss on trainig: 2.3722, Accuracy: 0.3125
+Batch no: 097, Loss on trainig: 2.0443, Accuracy: 0.4688
+Batch no: 098, Loss on trainig: 1.9954, Accuracy: 0.4375
+Batch no: 099, Loss on trainig: 2.3030, Accuracy: 0.2969
+Batch no: 100, Loss on trainig: 2.3042, Accuracy: 0.4219
+Batch no: 101, Loss on trainig: 2.1668, Accuracy: 0.3750
+Batch no: 102, Loss on trainig: 2.3890, Accuracy: 0.4167
+Epoch: 4/18
+Batch no: 000, Loss on trainig: 1.8900, Accuracy: 0.4375
+Batch no: 001, Loss on trainig: 2.3011, Accuracy: 0.3594
+Batch no: 002, Loss on trainig: 2.3068, Accuracy: 0.4219
+Batch no: 003, Loss on trainig: 2.1482, Accuracy: 0.4062
+Batch no: 004, Loss on trainig: 2.1193, Accuracy: 0.4844
+Batch no: 005, Loss on trainig: 2.0158, Accuracy: 0.5000
+Batch no: 006, Loss on trainig: 2.2105, Accuracy: 0.4219
+Batch no: 007, Loss on trainig: 2.5652, Accuracy: 0.3281
+Batch no: 008, Loss on trainig: 2.3523, Accuracy: 0.4062
+Batch no: 009, Loss on trainig: 2.0999, Accuracy: 0.4688
+Batch no: 010, Loss on trainig: 1.9902, Accuracy: 0.4688
+Batch no: 011, Loss on trainig: 2.1482, Accuracy: 0.3906
+Batch no: 012, Loss on trainig: 2.0766, Accuracy: 0.5000
+Batch no: 013, Loss on trainig: 2.1417, Accuracy: 0.4062
+Batch no: 014, Loss on trainig: 2.3164, Accuracy: 0.4531
+Batch no: 015, Loss on trainig: 1.8418, Accuracy: 0.4844
+Batch no: 016, Loss on trainig: 1.8100, Accuracy: 0.5156
+Batch no: 017, Loss on trainig: 2.0491, Accuracy: 0.4375
+Batch no: 018, Loss on trainig: 2.0218, Accuracy: 0.5000
+Batch no: 019, Loss on trainig: 2.0323, Accuracy: 0.3750
+Batch no: 020, Loss on trainig: 2.2090, Accuracy: 0.4219
+Batch no: 021, Loss on trainig: 1.9786, Accuracy: 0.4844
+Batch no: 022, Loss on trainig: 2.3165, Accuracy: 0.4375
+Batch no: 023, Loss on trainig: 2.1060, Accuracy: 0.4062
+Batch no: 024, Loss on trainig: 2.3490, Accuracy: 0.3750
+Batch no: 025, Loss on trainig: 1.9041, Accuracy: 0.5312
+Batch no: 026, Loss on trainig: 2.1922, Accuracy: 0.3281
+Batch no: 027, Loss on trainig: 2.2245, Accuracy: 0.4688
+Batch no: 028, Loss on trainig: 1.9978, Accuracy: 0.4531
+Batch no: 029, Loss on trainig: 2.4152, Accuracy: 0.3594
+Batch no: 030, Loss on trainig: 1.9809, Accuracy: 0.4062
+Batch no: 031, Loss on trainig: 2.1567, Accuracy: 0.4688
+Batch no: 032, Loss on trainig: 2.1032, Accuracy: 0.4375
+Batch no: 033, Loss on trainig: 2.2805, Accuracy: 0.3594
+Batch no: 034, Loss on trainig: 1.6939, Accuracy: 0.5156
+Batch no: 035, Loss on trainig: 1.9063, Accuracy: 0.5156
+Batch no: 036, Loss on trainig: 1.8876, Accuracy: 0.4219
+Batch no: 037, Loss on trainig: 1.9513, Accuracy: 0.4531
+Batch no: 038, Loss on trainig: 1.9244, Accuracy: 0.4531
+Batch no: 039, Loss on trainig: 2.0616, Accuracy: 0.4844
+Batch no: 040, Loss on trainig: 2.1769, Accuracy: 0.4219
+Batch no: 041, Loss on trainig: 2.1156, Accuracy: 0.3906
+Batch no: 042, Loss on trainig: 1.7658, Accuracy: 0.5000
+Batch no: 043, Loss on trainig: 2.0832, Accuracy: 0.4375
+Batch no: 044, Loss on trainig: 1.8542, Accuracy: 0.5156
+Batch no: 045, Loss on trainig: 1.8014, Accuracy: 0.4688
+Batch no: 046, Loss on trainig: 2.2323, Accuracy: 0.3438
+Batch no: 047, Loss on trainig: 1.8813, Accuracy: 0.4531
+Batch no: 048, Loss on trainig: 2.1420, Accuracy: 0.4531
+Batch no: 049, Loss on trainig: 1.9572, Accuracy: 0.4062
+Batch no: 050, Loss on trainig: 1.7560, Accuracy: 0.5625
+Batch no: 051, Loss on trainig: 2.2258, Accuracy: 0.4219
+Batch no: 052, Loss on trainig: 1.9801, Accuracy: 0.4219
+Batch no: 053, Loss on trainig: 1.9134, Accuracy: 0.4062
+Batch no: 054, Loss on trainig: 1.9599, Accuracy: 0.4375
+Batch no: 055, Loss on trainig: 1.7667, Accuracy: 0.5312
+Batch no: 056, Loss on trainig: 1.9203, Accuracy: 0.4844
+Batch no: 057, Loss on trainig: 2.3083, Accuracy: 0.4219
+Batch no: 058, Loss on trainig: 2.3882, Accuracy: 0.3906
+Batch no: 059, Loss on trainig: 1.8691, Accuracy: 0.4844
+Batch no: 060, Loss on trainig: 2.1732, Accuracy: 0.4531
+Batch no: 061, Loss on trainig: 1.6118, Accuracy: 0.5000
+Batch no: 062, Loss on trainig: 2.1487, Accuracy: 0.3906
+Batch no: 063, Loss on trainig: 2.1702, Accuracy: 0.4219
+Batch no: 064, Loss on trainig: 1.8222, Accuracy: 0.4688
+Batch no: 065, Loss on trainig: 2.2932, Accuracy: 0.3438
+Batch no: 066, Loss on trainig: 2.4646, Accuracy: 0.3594
+Batch no: 067, Loss on trainig: 1.9154, Accuracy: 0.5000
+Batch no: 068, Loss on trainig: 1.9563, Accuracy: 0.4219
+Batch no: 069, Loss on trainig: 1.5508, Accuracy: 0.4844
+Batch no: 070, Loss on trainig: 1.8281, Accuracy: 0.4531
+Batch no: 071, Loss on trainig: 2.0071, Accuracy: 0.3438
+Batch no: 072, Loss on trainig: 1.5963, Accuracy: 0.5938
+Batch no: 073, Loss on trainig: 1.9300, Accuracy: 0.4531
+Batch no: 074, Loss on trainig: 2.1679, Accuracy: 0.3906
+Batch no: 075, Loss on trainig: 1.3461, Accuracy: 0.6562
+Batch no: 076, Loss on trainig: 1.8871, Accuracy: 0.4531
+Batch no: 077, Loss on trainig: 2.1391, Accuracy: 0.3438
+Batch no: 078, Loss on trainig: 1.7728, Accuracy: 0.5312
+Batch no: 079, Loss on trainig: 1.9138, Accuracy: 0.5469
+Batch no: 080, Loss on trainig: 1.9099, Accuracy: 0.5312
+Batch no: 081, Loss on trainig: 2.1766, Accuracy: 0.4688
+Batch no: 082, Loss on trainig: 2.1272, Accuracy: 0.4531
+Batch no: 083, Loss on trainig: 1.9716, Accuracy: 0.4375
+Batch no: 084, Loss on trainig: 1.6635, Accuracy: 0.5469
+Batch no: 085, Loss on trainig: 1.6867, Accuracy: 0.5469
+Batch no: 086, Loss on trainig: 2.3971, Accuracy: 0.3594
+Batch no: 087, Loss on trainig: 1.9878, Accuracy: 0.5156
+Batch no: 088, Loss on trainig: 2.0389, Accuracy: 0.5312
+Batch no: 089, Loss on trainig: 1.8882, Accuracy: 0.5156
+Batch no: 090, Loss on trainig: 1.8491, Accuracy: 0.4375
+Batch no: 091, Loss on trainig: 1.4691, Accuracy: 0.5781
+Batch no: 092, Loss on trainig: 1.8782, Accuracy: 0.5000
+Batch no: 093, Loss on trainig: 1.8422, Accuracy: 0.5469
+Batch no: 094, Loss on trainig: 2.1891, Accuracy: 0.3906
+Batch no: 095, Loss on trainig: 1.8543, Accuracy: 0.4219
+Batch no: 096, Loss on trainig: 2.1586, Accuracy: 0.4062
+Batch no: 097, Loss on trainig: 2.1688, Accuracy: 0.4375
+Batch no: 098, Loss on trainig: 1.6648, Accuracy: 0.5156
+Batch no: 099, Loss on trainig: 1.5590, Accuracy: 0.5781
+Batch no: 100, Loss on trainig: 2.1385, Accuracy: 0.4531
+Batch no: 101, Loss on trainig: 1.7958, Accuracy: 0.5312
+Batch no: 102, Loss on trainig: 2.3910, Accuracy: 0.3333
+Epoch: 5/18
+Batch no: 000, Loss on trainig: 1.7822, Accuracy: 0.4531
+Batch no: 001, Loss on trainig: 1.9499, Accuracy: 0.5156
+Batch no: 002, Loss on trainig: 1.7280, Accuracy: 0.5000
+Batch no: 003, Loss on trainig: 1.9860, Accuracy: 0.4531
+Batch no: 004, Loss on trainig: 1.7065, Accuracy: 0.5312
+Batch no: 005, Loss on trainig: 2.0687, Accuracy: 0.5312
+Batch no: 006, Loss on trainig: 1.9026, Accuracy: 0.5625
+Batch no: 007, Loss on trainig: 2.3757, Accuracy: 0.3594
+Batch no: 008, Loss on trainig: 1.8144, Accuracy: 0.5000
+Batch no: 009, Loss on trainig: 2.3079, Accuracy: 0.3906
+Batch no: 010, Loss on trainig: 1.7664, Accuracy: 0.5469
+Batch no: 011, Loss on trainig: 1.9190, Accuracy: 0.4844
+Batch no: 012, Loss on trainig: 2.1283, Accuracy: 0.4219
+Batch no: 013, Loss on trainig: 1.7626, Accuracy: 0.5000
+Batch no: 014, Loss on trainig: 1.8707, Accuracy: 0.5000
+Batch no: 015, Loss on trainig: 1.9274, Accuracy: 0.3906
+Batch no: 016, Loss on trainig: 1.8853, Accuracy: 0.4375
+Batch no: 017, Loss on trainig: 1.5038, Accuracy: 0.5938
+Batch no: 018, Loss on trainig: 1.8388, Accuracy: 0.5000
+Batch no: 019, Loss on trainig: 1.6872, Accuracy: 0.5781
+Batch no: 020, Loss on trainig: 1.8822, Accuracy: 0.4844
+Batch no: 021, Loss on trainig: 2.0290, Accuracy: 0.4531
+Batch no: 022, Loss on trainig: 2.1139, Accuracy: 0.4688
+Batch no: 023, Loss on trainig: 1.9462, Accuracy: 0.4844
+Batch no: 024, Loss on trainig: 2.2382, Accuracy: 0.4062
+Batch no: 025, Loss on trainig: 2.0235, Accuracy: 0.4844
+Batch no: 026, Loss on trainig: 1.6864, Accuracy: 0.4688
+Batch no: 027, Loss on trainig: 1.9810, Accuracy: 0.4062
+Batch no: 028, Loss on trainig: 1.7705, Accuracy: 0.5156
+Batch no: 029, Loss on trainig: 1.9393, Accuracy: 0.4375
+Batch no: 030, Loss on trainig: 1.6713, Accuracy: 0.5312
+Batch no: 031, Loss on trainig: 1.6564, Accuracy: 0.5156
+Batch no: 032, Loss on trainig: 1.7078, Accuracy: 0.5469
+Batch no: 033, Loss on trainig: 1.7368, Accuracy: 0.5469
+Batch no: 034, Loss on trainig: 1.8752, Accuracy: 0.4688
+Batch no: 035, Loss on trainig: 1.7654, Accuracy: 0.4531
+Batch no: 036, Loss on trainig: 1.7725, Accuracy: 0.4688
+Batch no: 037, Loss on trainig: 1.6688, Accuracy: 0.5469
+Batch no: 038, Loss on trainig: 1.5562, Accuracy: 0.5469
+Batch no: 039, Loss on trainig: 2.0178, Accuracy: 0.3906
+Batch no: 040, Loss on trainig: 1.5746, Accuracy: 0.4844
+Batch no: 041, Loss on trainig: 1.6631, Accuracy: 0.5781
+Batch no: 042, Loss on trainig: 1.6302, Accuracy: 0.5938
+Batch no: 043, Loss on trainig: 1.9385, Accuracy: 0.4375
+Batch no: 044, Loss on trainig: 1.9755, Accuracy: 0.4844
+Batch no: 045, Loss on trainig: 1.4142, Accuracy: 0.5625
+Batch no: 046, Loss on trainig: 1.8159, Accuracy: 0.4375
+Batch no: 047, Loss on trainig: 2.0260, Accuracy: 0.4375
+Batch no: 048, Loss on trainig: 1.6864, Accuracy: 0.4688
+Batch no: 049, Loss on trainig: 1.5185, Accuracy: 0.6250
+Batch no: 050, Loss on trainig: 1.9537, Accuracy: 0.4219
+Batch no: 051, Loss on trainig: 1.7786, Accuracy: 0.4688
+Batch no: 052, Loss on trainig: 1.7824, Accuracy: 0.5156
+Batch no: 053, Loss on trainig: 1.7055, Accuracy: 0.5781
+Batch no: 054, Loss on trainig: 1.6878, Accuracy: 0.5000
+Batch no: 055, Loss on trainig: 1.7662, Accuracy: 0.4844
+Batch no: 056, Loss on trainig: 1.9306, Accuracy: 0.5156
+Batch no: 057, Loss on trainig: 1.8716, Accuracy: 0.4531
+Batch no: 058, Loss on trainig: 1.7718, Accuracy: 0.5312
+Batch no: 059, Loss on trainig: 1.9387, Accuracy: 0.5156
+Batch no: 060, Loss on trainig: 2.1326, Accuracy: 0.4062
+Batch no: 061, Loss on trainig: 1.8305, Accuracy: 0.4531
+Batch no: 062, Loss on trainig: 1.8664, Accuracy: 0.4375
+Batch no: 063, Loss on trainig: 1.9679, Accuracy: 0.4531
+Batch no: 064, Loss on trainig: 1.8404, Accuracy: 0.4531
+Batch no: 065, Loss on trainig: 2.0735, Accuracy: 0.5000
+Batch no: 066, Loss on trainig: 1.6925, Accuracy: 0.5000
+Batch no: 067, Loss on trainig: 1.9216, Accuracy: 0.4375
+Batch no: 068, Loss on trainig: 2.1623, Accuracy: 0.3906
+Batch no: 069, Loss on trainig: 1.9719, Accuracy: 0.4219
+Batch no: 070, Loss on trainig: 1.9697, Accuracy: 0.4531
+Batch no: 071, Loss on trainig: 1.8778, Accuracy: 0.4844
+Batch no: 072, Loss on trainig: 1.8360, Accuracy: 0.5312
+Batch no: 073, Loss on trainig: 1.7263, Accuracy: 0.5000
+Batch no: 074, Loss on trainig: 2.0773, Accuracy: 0.5000
+Batch no: 075, Loss on trainig: 2.0466, Accuracy: 0.4531
+Batch no: 076, Loss on trainig: 2.0459, Accuracy: 0.4375
+Batch no: 077, Loss on trainig: 2.3127, Accuracy: 0.4219
+Batch no: 078, Loss on trainig: 2.0715, Accuracy: 0.4688
+Batch no: 079, Loss on trainig: 1.9850, Accuracy: 0.4531
+Batch no: 080, Loss on trainig: 1.8646, Accuracy: 0.5000
+Batch no: 081, Loss on trainig: 2.1532, Accuracy: 0.4688
+Batch no: 082, Loss on trainig: 1.5539, Accuracy: 0.5781
+Batch no: 083, Loss on trainig: 1.8217, Accuracy: 0.5156
+Batch no: 084, Loss on trainig: 1.8295, Accuracy: 0.4375
+Batch no: 085, Loss on trainig: 1.5615, Accuracy: 0.5469
+Batch no: 086, Loss on trainig: 1.6466, Accuracy: 0.6094
+Batch no: 087, Loss on trainig: 1.6617, Accuracy: 0.5781
+Batch no: 088, Loss on trainig: 1.8619, Accuracy: 0.4531
+Batch no: 089, Loss on trainig: 1.9270, Accuracy: 0.4688
+Batch no: 090, Loss on trainig: 1.9791, Accuracy: 0.3750
+Batch no: 091, Loss on trainig: 2.2549, Accuracy: 0.4219
+Batch no: 092, Loss on trainig: 1.8859, Accuracy: 0.5000
+Batch no: 093, Loss on trainig: 2.1483, Accuracy: 0.4844
+Batch no: 094, Loss on trainig: 2.1262, Accuracy: 0.3594
+Batch no: 095, Loss on trainig: 2.0818, Accuracy: 0.5156
+Batch no: 096, Loss on trainig: 1.8390, Accuracy: 0.5156
+Batch no: 097, Loss on trainig: 1.8546, Accuracy: 0.5312
+Batch no: 098, Loss on trainig: 2.0367, Accuracy: 0.4531
+Batch no: 099, Loss on trainig: 1.9475, Accuracy: 0.5000
+Batch no: 100, Loss on trainig: 1.6871, Accuracy: 0.5469
+Batch no: 101, Loss on trainig: 1.5952, Accuracy: 0.5781
+Batch no: 102, Loss on trainig: 0.9699, Accuracy: 0.7083
+Epoch: 6/18
+Batch no: 000, Loss on trainig: 1.5979, Accuracy: 0.5469
+Batch no: 001, Loss on trainig: 1.6412, Accuracy: 0.5781
+Batch no: 002, Loss on trainig: 1.5975, Accuracy: 0.5938
+Batch no: 003, Loss on trainig: 1.8213, Accuracy: 0.4844
+Batch no: 004, Loss on trainig: 2.0176, Accuracy: 0.4688
+Batch no: 005, Loss on trainig: 2.0475, Accuracy: 0.3750
+Batch no: 006, Loss on trainig: 1.6682, Accuracy: 0.5156
+Batch no: 007, Loss on trainig: 1.9235, Accuracy: 0.5000
+Batch no: 008, Loss on trainig: 1.8701, Accuracy: 0.5625
+Batch no: 009, Loss on trainig: 1.7547, Accuracy: 0.5000
+Batch no: 010, Loss on trainig: 1.7905, Accuracy: 0.5625
+Batch no: 011, Loss on trainig: 1.6027, Accuracy: 0.4844
+Batch no: 012, Loss on trainig: 1.7906, Accuracy: 0.5312
+Batch no: 013, Loss on trainig: 1.7795, Accuracy: 0.5469
+Batch no: 014, Loss on trainig: 1.6137, Accuracy: 0.5156
+Batch no: 015, Loss on trainig: 1.9009, Accuracy: 0.4062
+Batch no: 016, Loss on trainig: 1.5424, Accuracy: 0.5156
+Batch no: 017, Loss on trainig: 1.4289, Accuracy: 0.5938
+Batch no: 018, Loss on trainig: 1.5491, Accuracy: 0.4688
+Batch no: 019, Loss on trainig: 2.0985, Accuracy: 0.4219
+Batch no: 020, Loss on trainig: 1.3026, Accuracy: 0.6406
+Batch no: 021, Loss on trainig: 1.7435, Accuracy: 0.4688
+Batch no: 022, Loss on trainig: 1.4865, Accuracy: 0.5312
+Batch no: 023, Loss on trainig: 1.9803, Accuracy: 0.5156
+Batch no: 024, Loss on trainig: 1.9558, Accuracy: 0.4844
+Batch no: 025, Loss on trainig: 2.0178, Accuracy: 0.4844
+Batch no: 026, Loss on trainig: 1.8556, Accuracy: 0.4375
+Batch no: 027, Loss on trainig: 1.8884, Accuracy: 0.5156
+Batch no: 028, Loss on trainig: 1.7105, Accuracy: 0.4844
+Batch no: 029, Loss on trainig: 1.8984, Accuracy: 0.5000
+Batch no: 030, Loss on trainig: 1.6190, Accuracy: 0.5156
+Batch no: 031, Loss on trainig: 1.7406, Accuracy: 0.5312
+Batch no: 032, Loss on trainig: 1.6791, Accuracy: 0.5312
+Batch no: 033, Loss on trainig: 1.8860, Accuracy: 0.5000
+Batch no: 034, Loss on trainig: 1.5191, Accuracy: 0.5156
+Batch no: 035, Loss on trainig: 2.0402, Accuracy: 0.4375
+Batch no: 036, Loss on trainig: 1.7030, Accuracy: 0.4844
+Batch no: 037, Loss on trainig: 1.7579, Accuracy: 0.4375
+Batch no: 038, Loss on trainig: 1.6814, Accuracy: 0.5625
+Batch no: 039, Loss on trainig: 1.4643, Accuracy: 0.6094
+Batch no: 040, Loss on trainig: 1.9360, Accuracy: 0.5312
+Batch no: 041, Loss on trainig: 1.6237, Accuracy: 0.5469
+Batch no: 042, Loss on trainig: 1.5235, Accuracy: 0.5312
+Batch no: 043, Loss on trainig: 1.5503, Accuracy: 0.6250
+Batch no: 044, Loss on trainig: 1.8088, Accuracy: 0.4844
+Batch no: 045, Loss on trainig: 1.8136, Accuracy: 0.5000
+Batch no: 046, Loss on trainig: 1.6714, Accuracy: 0.4531
+Batch no: 047, Loss on trainig: 1.8379, Accuracy: 0.4375
+Batch no: 048, Loss on trainig: 1.8538, Accuracy: 0.5000
+Batch no: 049, Loss on trainig: 1.6912, Accuracy: 0.5781
+Batch no: 050, Loss on trainig: 1.7789, Accuracy: 0.4844
+Batch no: 051, Loss on trainig: 2.0563, Accuracy: 0.5000
+Batch no: 052, Loss on trainig: 1.8032, Accuracy: 0.5469
+Batch no: 053, Loss on trainig: 1.7890, Accuracy: 0.5156
+Batch no: 054, Loss on trainig: 1.7177, Accuracy: 0.5156
+Batch no: 055, Loss on trainig: 1.6086, Accuracy: 0.5469
+Batch no: 056, Loss on trainig: 2.1372, Accuracy: 0.4531
+Batch no: 057, Loss on trainig: 2.0680, Accuracy: 0.5000
+Batch no: 058, Loss on trainig: 1.9972, Accuracy: 0.5000
+Batch no: 059, Loss on trainig: 1.5479, Accuracy: 0.5625
+Batch no: 060, Loss on trainig: 1.7156, Accuracy: 0.5781
+Batch no: 061, Loss on trainig: 1.6937, Accuracy: 0.5312
+Batch no: 062, Loss on trainig: 1.9434, Accuracy: 0.4062
+Batch no: 063, Loss on trainig: 1.8354, Accuracy: 0.5781
+Batch no: 064, Loss on trainig: 2.1094, Accuracy: 0.3594
+Batch no: 065, Loss on trainig: 1.7402, Accuracy: 0.5469
+Batch no: 066, Loss on trainig: 1.5125, Accuracy: 0.5625
+Batch no: 067, Loss on trainig: 1.7865, Accuracy: 0.5625
+Batch no: 068, Loss on trainig: 1.7498, Accuracy: 0.5156
+Batch no: 069, Loss on trainig: 1.7765, Accuracy: 0.4844
+Batch no: 070, Loss on trainig: 2.4513, Accuracy: 0.3750
+Batch no: 071, Loss on trainig: 1.7371, Accuracy: 0.6094
+Batch no: 072, Loss on trainig: 2.0425, Accuracy: 0.5156
+Batch no: 073, Loss on trainig: 1.9783, Accuracy: 0.4844
+Batch no: 074, Loss on trainig: 2.1444, Accuracy: 0.5156
+Batch no: 075, Loss on trainig: 1.6984, Accuracy: 0.5156
+Batch no: 076, Loss on trainig: 1.7192, Accuracy: 0.4844
+Batch no: 077, Loss on trainig: 1.6497, Accuracy: 0.5000
+Batch no: 078, Loss on trainig: 1.8063, Accuracy: 0.5000
+Batch no: 079, Loss on trainig: 1.9583, Accuracy: 0.4844
+Batch no: 080, Loss on trainig: 1.4659, Accuracy: 0.5781
+Batch no: 081, Loss on trainig: 1.6171, Accuracy: 0.5312
+Batch no: 082, Loss on trainig: 1.5738, Accuracy: 0.4688
+Batch no: 083, Loss on trainig: 1.6415, Accuracy: 0.4844
+Batch no: 084, Loss on trainig: 1.7240, Accuracy: 0.4688
+Batch no: 085, Loss on trainig: 1.7916, Accuracy: 0.5000
+Batch no: 086, Loss on trainig: 1.5831, Accuracy: 0.5156
+Batch no: 087, Loss on trainig: 1.5943, Accuracy: 0.5625
+Batch no: 088, Loss on trainig: 1.6254, Accuracy: 0.6250
+Batch no: 089, Loss on trainig: 1.9988, Accuracy: 0.4219
+Batch no: 090, Loss on trainig: 1.8292, Accuracy: 0.4844
+Batch no: 091, Loss on trainig: 1.8491, Accuracy: 0.5469
+Batch no: 092, Loss on trainig: 1.9564, Accuracy: 0.4844
+Batch no: 093, Loss on trainig: 1.5206, Accuracy: 0.5469
+Batch no: 094, Loss on trainig: 1.8537, Accuracy: 0.4844
+Batch no: 095, Loss on trainig: 1.5361, Accuracy: 0.5469
+Batch no: 096, Loss on trainig: 1.6794, Accuracy: 0.4844
+Batch no: 097, Loss on trainig: 1.7879, Accuracy: 0.5312
+Batch no: 098, Loss on trainig: 2.1749, Accuracy: 0.4062
+Batch no: 099, Loss on trainig: 1.9931, Accuracy: 0.4688
+Batch no: 100, Loss on trainig: 1.4489, Accuracy: 0.5781
+Batch no: 101, Loss on trainig: 1.6153, Accuracy: 0.5469
+Batch no: 102, Loss on trainig: 1.9249, Accuracy: 0.4167
+Epoch: 7/18
+Batch no: 000, Loss on trainig: 1.4178, Accuracy: 0.5469
+Batch no: 001, Loss on trainig: 1.7653, Accuracy: 0.5781
+Batch no: 002, Loss on trainig: 1.6558, Accuracy: 0.5469
+Batch no: 003, Loss on trainig: 1.4166, Accuracy: 0.5469
+Batch no: 004, Loss on trainig: 1.2790, Accuracy: 0.6406
+Batch no: 005, Loss on trainig: 2.2057, Accuracy: 0.4219
+Batch no: 006, Loss on trainig: 1.7269, Accuracy: 0.5625
+Batch no: 007, Loss on trainig: 1.6599, Accuracy: 0.5312
+Batch no: 008, Loss on trainig: 1.8995, Accuracy: 0.4375
+Batch no: 009, Loss on trainig: 1.7726, Accuracy: 0.5469
+Batch no: 010, Loss on trainig: 1.6631, Accuracy: 0.4844
+Batch no: 011, Loss on trainig: 1.9087, Accuracy: 0.3750
+Batch no: 012, Loss on trainig: 1.6943, Accuracy: 0.4844
+Batch no: 013, Loss on trainig: 1.6540, Accuracy: 0.5000
+Batch no: 014, Loss on trainig: 1.6725, Accuracy: 0.4688
+Batch no: 015, Loss on trainig: 2.0301, Accuracy: 0.5156
+Batch no: 016, Loss on trainig: 1.5672, Accuracy: 0.5938
+Batch no: 017, Loss on trainig: 1.7369, Accuracy: 0.5156
+Batch no: 018, Loss on trainig: 1.6336, Accuracy: 0.5312
+Batch no: 019, Loss on trainig: 1.8790, Accuracy: 0.5156
+Batch no: 020, Loss on trainig: 1.4199, Accuracy: 0.5938
+Batch no: 021, Loss on trainig: 1.6492, Accuracy: 0.4688
+Batch no: 022, Loss on trainig: 1.2980, Accuracy: 0.7031
+Batch no: 023, Loss on trainig: 1.9102, Accuracy: 0.4844
+Batch no: 024, Loss on trainig: 1.4544, Accuracy: 0.5312
+Batch no: 025, Loss on trainig: 1.7879, Accuracy: 0.5000
+Batch no: 026, Loss on trainig: 1.7304, Accuracy: 0.6562
+Batch no: 027, Loss on trainig: 1.8138, Accuracy: 0.4531
+Batch no: 028, Loss on trainig: 2.1040, Accuracy: 0.4375
+Batch no: 029, Loss on trainig: 1.6408, Accuracy: 0.5781
+Batch no: 030, Loss on trainig: 1.7067, Accuracy: 0.5156
+Batch no: 031, Loss on trainig: 1.4568, Accuracy: 0.6094
+Batch no: 032, Loss on trainig: 1.8089, Accuracy: 0.5156
+Batch no: 033, Loss on trainig: 1.4431, Accuracy: 0.5625
+Batch no: 034, Loss on trainig: 1.7014, Accuracy: 0.5000
+Batch no: 035, Loss on trainig: 1.8455, Accuracy: 0.4219
+Batch no: 036, Loss on trainig: 1.6357, Accuracy: 0.5625
+Batch no: 037, Loss on trainig: 1.9488, Accuracy: 0.4688
+Batch no: 038, Loss on trainig: 1.4215, Accuracy: 0.6094
+Batch no: 039, Loss on trainig: 1.6210, Accuracy: 0.5938
+Batch no: 040, Loss on trainig: 1.5082, Accuracy: 0.6406
+Batch no: 041, Loss on trainig: 1.8863, Accuracy: 0.5000
+Batch no: 042, Loss on trainig: 1.6225, Accuracy: 0.5625
+Batch no: 043, Loss on trainig: 1.8461, Accuracy: 0.5156
+Batch no: 044, Loss on trainig: 1.9412, Accuracy: 0.4531
+Batch no: 045, Loss on trainig: 1.7463, Accuracy: 0.5312
+Batch no: 046, Loss on trainig: 2.3101, Accuracy: 0.3125
+Batch no: 047, Loss on trainig: 1.4434, Accuracy: 0.5312
+Batch no: 048, Loss on trainig: 1.7940, Accuracy: 0.5625
+Batch no: 049, Loss on trainig: 1.6565, Accuracy: 0.5625
+Batch no: 050, Loss on trainig: 1.8453, Accuracy: 0.4375
+Batch no: 051, Loss on trainig: 1.5948, Accuracy: 0.5938
+Batch no: 052, Loss on trainig: 1.5940, Accuracy: 0.5781
+Batch no: 053, Loss on trainig: 1.9895, Accuracy: 0.4531
+Batch no: 054, Loss on trainig: 1.7279, Accuracy: 0.5156
+Batch no: 055, Loss on trainig: 1.7394, Accuracy: 0.5312
+Batch no: 056, Loss on trainig: 1.7831, Accuracy: 0.4844
+Batch no: 057, Loss on trainig: 1.9473, Accuracy: 0.4375
+Batch no: 058, Loss on trainig: 1.5796, Accuracy: 0.6250
+Batch no: 059, Loss on trainig: 2.0057, Accuracy: 0.5312
+Batch no: 060, Loss on trainig: 1.7909, Accuracy: 0.4219
+Batch no: 061, Loss on trainig: 1.9012, Accuracy: 0.5469
+Batch no: 062, Loss on trainig: 1.5125, Accuracy: 0.5781
+Batch no: 063, Loss on trainig: 1.7891, Accuracy: 0.5000
+Batch no: 064, Loss on trainig: 1.4555, Accuracy: 0.5469
+Batch no: 065, Loss on trainig: 1.4914, Accuracy: 0.5938
+Batch no: 066, Loss on trainig: 1.6392, Accuracy: 0.5312
+Batch no: 067, Loss on trainig: 2.1544, Accuracy: 0.4531
+Batch no: 068, Loss on trainig: 1.7109, Accuracy: 0.4844
+Batch no: 069, Loss on trainig: 2.1146, Accuracy: 0.4375
+Batch no: 070, Loss on trainig: 1.7316, Accuracy: 0.6250
+Batch no: 071, Loss on trainig: 1.7343, Accuracy: 0.5000
+Batch no: 072, Loss on trainig: 1.8347, Accuracy: 0.4688
+Batch no: 073, Loss on trainig: 1.8485, Accuracy: 0.4844
+Batch no: 074, Loss on trainig: 1.5355, Accuracy: 0.5469
+Batch no: 075, Loss on trainig: 1.9847, Accuracy: 0.4844
+Batch no: 076, Loss on trainig: 1.8463, Accuracy: 0.4844
+Batch no: 077, Loss on trainig: 1.8444, Accuracy: 0.4844
+Batch no: 078, Loss on trainig: 1.8533, Accuracy: 0.5312
+Batch no: 079, Loss on trainig: 1.5936, Accuracy: 0.5781
+Batch no: 080, Loss on trainig: 1.6784, Accuracy: 0.5469
+Batch no: 081, Loss on trainig: 2.1654, Accuracy: 0.4531
+Batch no: 082, Loss on trainig: 1.6865, Accuracy: 0.5312
+Batch no: 083, Loss on trainig: 1.7880, Accuracy: 0.5000
+Batch no: 084, Loss on trainig: 1.9022, Accuracy: 0.5000
+Batch no: 085, Loss on trainig: 1.2800, Accuracy: 0.6094
+Batch no: 086, Loss on trainig: 1.7454, Accuracy: 0.4844
+Batch no: 087, Loss on trainig: 1.9258, Accuracy: 0.4219
+Batch no: 088, Loss on trainig: 2.0446, Accuracy: 0.4219
+Batch no: 089, Loss on trainig: 1.6028, Accuracy: 0.5625
+Batch no: 090, Loss on trainig: 1.5009, Accuracy: 0.5625
+Batch no: 091, Loss on trainig: 1.6752, Accuracy: 0.5000
+Batch no: 092, Loss on trainig: 1.9208, Accuracy: 0.4844
+Batch no: 093, Loss on trainig: 1.8421, Accuracy: 0.5000
+Batch no: 094, Loss on trainig: 1.7760, Accuracy: 0.5469
+Batch no: 095, Loss on trainig: 1.8223, Accuracy: 0.5312
+Batch no: 096, Loss on trainig: 1.6978, Accuracy: 0.5156
+Batch no: 097, Loss on trainig: 1.4947, Accuracy: 0.5781
+Batch no: 098, Loss on trainig: 1.3887, Accuracy: 0.5938
+Batch no: 099, Loss on trainig: 1.3318, Accuracy: 0.6406
+Batch no: 100, Loss on trainig: 1.7398, Accuracy: 0.5781
+Batch no: 101, Loss on trainig: 2.0813, Accuracy: 0.4531
+Batch no: 102, Loss on trainig: 1.3024, Accuracy: 0.6250
+Epoch: 8/18
+Batch no: 000, Loss on trainig: 1.9681, Accuracy: 0.4375
+Batch no: 001, Loss on trainig: 1.8806, Accuracy: 0.4844
+Batch no: 002, Loss on trainig: 1.2847, Accuracy: 0.6406
+Batch no: 003, Loss on trainig: 2.0051, Accuracy: 0.4219
+Batch no: 004, Loss on trainig: 1.3320, Accuracy: 0.6719
+Batch no: 005, Loss on trainig: 1.5209, Accuracy: 0.5781
+Batch no: 006, Loss on trainig: 1.5240, Accuracy: 0.5938
+Batch no: 007, Loss on trainig: 1.4874, Accuracy: 0.6094
+Batch no: 008, Loss on trainig: 1.4632, Accuracy: 0.5625
+Batch no: 009, Loss on trainig: 1.5018, Accuracy: 0.5625
+Batch no: 010, Loss on trainig: 1.8617, Accuracy: 0.5312
+Batch no: 011, Loss on trainig: 1.6405, Accuracy: 0.5312
+Batch no: 012, Loss on trainig: 1.6648, Accuracy: 0.4688
+Batch no: 013, Loss on trainig: 1.5140, Accuracy: 0.5312
+Batch no: 014, Loss on trainig: 1.4391, Accuracy: 0.6562
+Batch no: 015, Loss on trainig: 1.6596, Accuracy: 0.5312
+Batch no: 016, Loss on trainig: 1.4204, Accuracy: 0.6406
+Batch no: 017, Loss on trainig: 1.2718, Accuracy: 0.6094
+Batch no: 018, Loss on trainig: 2.0505, Accuracy: 0.4375
+Batch no: 019, Loss on trainig: 1.8230, Accuracy: 0.5156
+Batch no: 020, Loss on trainig: 1.5499, Accuracy: 0.5469
+Batch no: 021, Loss on trainig: 1.3910, Accuracy: 0.5938
+Batch no: 022, Loss on trainig: 1.6787, Accuracy: 0.5469
+Batch no: 023, Loss on trainig: 1.9123, Accuracy: 0.5000
+Batch no: 024, Loss on trainig: 1.5909, Accuracy: 0.5938
+Batch no: 025, Loss on trainig: 1.7953, Accuracy: 0.5000
+Batch no: 026, Loss on trainig: 1.6857, Accuracy: 0.6094
+Batch no: 027, Loss on trainig: 1.7271, Accuracy: 0.4844
+Batch no: 028, Loss on trainig: 1.2430, Accuracy: 0.6562
+Batch no: 029, Loss on trainig: 1.5691, Accuracy: 0.6562
+Batch no: 030, Loss on trainig: 1.8097, Accuracy: 0.5625
+Batch no: 031, Loss on trainig: 1.6372, Accuracy: 0.5625
+Batch no: 032, Loss on trainig: 1.4693, Accuracy: 0.5781
+Batch no: 033, Loss on trainig: 1.4946, Accuracy: 0.5938
+Batch no: 034, Loss on trainig: 1.9888, Accuracy: 0.4375
+Batch no: 035, Loss on trainig: 1.4383, Accuracy: 0.5625
+Batch no: 036, Loss on trainig: 1.7596, Accuracy: 0.4688
+Batch no: 037, Loss on trainig: 1.4791, Accuracy: 0.5781
+Batch no: 038, Loss on trainig: 1.9298, Accuracy: 0.3750
+Batch no: 039, Loss on trainig: 1.7846, Accuracy: 0.5938
+Batch no: 040, Loss on trainig: 1.5962, Accuracy: 0.5469
+Batch no: 041, Loss on trainig: 1.6387, Accuracy: 0.5000
+Batch no: 042, Loss on trainig: 1.3494, Accuracy: 0.6250
+Batch no: 043, Loss on trainig: 1.6482, Accuracy: 0.6250
+Batch no: 044, Loss on trainig: 1.6423, Accuracy: 0.5312
+Batch no: 045, Loss on trainig: 1.4883, Accuracy: 0.5625
+Batch no: 046, Loss on trainig: 1.3282, Accuracy: 0.5625
+Batch no: 047, Loss on trainig: 1.2705, Accuracy: 0.5938
+Batch no: 048, Loss on trainig: 2.1557, Accuracy: 0.5312
+Batch no: 049, Loss on trainig: 1.5723, Accuracy: 0.6094
+Batch no: 050, Loss on trainig: 1.5669, Accuracy: 0.6094
+Batch no: 051, Loss on trainig: 1.7876, Accuracy: 0.5000
+Batch no: 052, Loss on trainig: 1.4416, Accuracy: 0.5938
+Batch no: 053, Loss on trainig: 1.3813, Accuracy: 0.6875
+Batch no: 054, Loss on trainig: 1.3044, Accuracy: 0.6562
+Batch no: 055, Loss on trainig: 2.2229, Accuracy: 0.4219
+Batch no: 056, Loss on trainig: 1.5803, Accuracy: 0.5625
+Batch no: 057, Loss on trainig: 1.8094, Accuracy: 0.4688
+Batch no: 058, Loss on trainig: 1.8930, Accuracy: 0.4844
+Batch no: 059, Loss on trainig: 1.9999, Accuracy: 0.4844
+Batch no: 060, Loss on trainig: 1.1471, Accuracy: 0.5938
+Batch no: 061, Loss on trainig: 1.7538, Accuracy: 0.5469
+Batch no: 062, Loss on trainig: 1.6983, Accuracy: 0.5156
+Batch no: 063, Loss on trainig: 1.4923, Accuracy: 0.6094
+Batch no: 064, Loss on trainig: 1.8749, Accuracy: 0.4375
+Batch no: 065, Loss on trainig: 1.3427, Accuracy: 0.6562
+Batch no: 066, Loss on trainig: 1.2859, Accuracy: 0.6406
+Batch no: 067, Loss on trainig: 1.6356, Accuracy: 0.5938
+Batch no: 068, Loss on trainig: 1.2009, Accuracy: 0.6719
+Batch no: 069, Loss on trainig: 1.9083, Accuracy: 0.4844
+Batch no: 070, Loss on trainig: 1.2839, Accuracy: 0.6562
+Batch no: 071, Loss on trainig: 1.5649, Accuracy: 0.6250
+Batch no: 072, Loss on trainig: 1.6996, Accuracy: 0.5469
+Batch no: 073, Loss on trainig: 1.6962, Accuracy: 0.5625
+Batch no: 074, Loss on trainig: 1.8214, Accuracy: 0.4531
+Batch no: 075, Loss on trainig: 1.7645, Accuracy: 0.5469
+Batch no: 076, Loss on trainig: 1.4467, Accuracy: 0.6250
+Batch no: 077, Loss on trainig: 1.4888, Accuracy: 0.6250
+Batch no: 078, Loss on trainig: 1.5146, Accuracy: 0.5625
+Batch no: 079, Loss on trainig: 2.0318, Accuracy: 0.5000
+Batch no: 080, Loss on trainig: 1.7923, Accuracy: 0.4844
+Batch no: 081, Loss on trainig: 1.3036, Accuracy: 0.5938
+Batch no: 082, Loss on trainig: 1.7020, Accuracy: 0.5312
+Batch no: 083, Loss on trainig: 1.3887, Accuracy: 0.6250
+Batch no: 084, Loss on trainig: 1.7964, Accuracy: 0.4531
+Batch no: 085, Loss on trainig: 1.7619, Accuracy: 0.5469
+Batch no: 086, Loss on trainig: 1.2326, Accuracy: 0.5469
+Batch no: 087, Loss on trainig: 1.7703, Accuracy: 0.5156
+Batch no: 088, Loss on trainig: 1.6115, Accuracy: 0.6250
+Batch no: 089, Loss on trainig: 1.5739, Accuracy: 0.5469
+Batch no: 090, Loss on trainig: 1.5057, Accuracy: 0.6250
+Batch no: 091, Loss on trainig: 1.6352, Accuracy: 0.5781
+Batch no: 092, Loss on trainig: 1.7755, Accuracy: 0.5625
+Batch no: 093, Loss on trainig: 1.9408, Accuracy: 0.4844
+Batch no: 094, Loss on trainig: 1.9784, Accuracy: 0.4375
+Batch no: 095, Loss on trainig: 1.9015, Accuracy: 0.5000
+Batch no: 096, Loss on trainig: 1.4509, Accuracy: 0.5938
+Batch no: 097, Loss on trainig: 1.7474, Accuracy: 0.5469
+Batch no: 098, Loss on trainig: 1.6383, Accuracy: 0.5781
+Batch no: 099, Loss on trainig: 1.5681, Accuracy: 0.5312
+Batch no: 100, Loss on trainig: 1.6107, Accuracy: 0.4844
+Batch no: 101, Loss on trainig: 1.8646, Accuracy: 0.5156
+Batch no: 102, Loss on trainig: 1.5312, Accuracy: 0.5417
+Epoch: 9/18
+Batch no: 000, Loss on trainig: 1.3859, Accuracy: 0.6094
+Batch no: 001, Loss on trainig: 1.3763, Accuracy: 0.5938
+Batch no: 002, Loss on trainig: 1.8341, Accuracy: 0.5312
+Batch no: 003, Loss on trainig: 1.4359, Accuracy: 0.6406
+Batch no: 004, Loss on trainig: 1.6494, Accuracy: 0.5156
+Batch no: 005, Loss on trainig: 1.4641, Accuracy: 0.6250
+Batch no: 006, Loss on trainig: 1.5376, Accuracy: 0.5312
+Batch no: 007, Loss on trainig: 1.8089, Accuracy: 0.5312
+Batch no: 008, Loss on trainig: 1.9128, Accuracy: 0.5156
+Batch no: 009, Loss on trainig: 1.7726, Accuracy: 0.5625
+Batch no: 010, Loss on trainig: 1.7194, Accuracy: 0.5625
+Batch no: 011, Loss on trainig: 1.3490, Accuracy: 0.6094
+Batch no: 012, Loss on trainig: 1.8011, Accuracy: 0.5469
+Batch no: 013, Loss on trainig: 1.9236, Accuracy: 0.5312
+Batch no: 014, Loss on trainig: 1.6224, Accuracy: 0.5469
+Batch no: 015, Loss on trainig: 1.5604, Accuracy: 0.5469
+Batch no: 016, Loss on trainig: 1.3967, Accuracy: 0.5781
+Batch no: 017, Loss on trainig: 1.4791, Accuracy: 0.5781
+Batch no: 018, Loss on trainig: 1.7930, Accuracy: 0.5312
+Batch no: 019, Loss on trainig: 2.1707, Accuracy: 0.4062
+Batch no: 020, Loss on trainig: 1.0496, Accuracy: 0.7031
+Batch no: 021, Loss on trainig: 1.4746, Accuracy: 0.5156
+Batch no: 022, Loss on trainig: 1.4035, Accuracy: 0.5938
+Batch no: 023, Loss on trainig: 1.3672, Accuracy: 0.6094
+Batch no: 024, Loss on trainig: 1.5574, Accuracy: 0.5469
+Batch no: 025, Loss on trainig: 1.1583, Accuracy: 0.7188
+Batch no: 026, Loss on trainig: 1.5442, Accuracy: 0.5938
+Batch no: 027, Loss on trainig: 1.5024, Accuracy: 0.5312
+Batch no: 028, Loss on trainig: 1.6212, Accuracy: 0.5938
+Batch no: 029, Loss on trainig: 1.6140, Accuracy: 0.5781
+Batch no: 030, Loss on trainig: 1.6491, Accuracy: 0.5938
+Batch no: 031, Loss on trainig: 1.6007, Accuracy: 0.5938
+Batch no: 032, Loss on trainig: 1.7736, Accuracy: 0.5625
+Batch no: 033, Loss on trainig: 1.4617, Accuracy: 0.5625
+Batch no: 034, Loss on trainig: 1.5675, Accuracy: 0.5469
+Batch no: 035, Loss on trainig: 1.4352, Accuracy: 0.6094
+Batch no: 036, Loss on trainig: 1.6542, Accuracy: 0.5156
+Batch no: 037, Loss on trainig: 1.5625, Accuracy: 0.5000
+Batch no: 038, Loss on trainig: 1.8049, Accuracy: 0.5156
+Batch no: 039, Loss on trainig: 1.4778, Accuracy: 0.6250
+Batch no: 040, Loss on trainig: 1.7507, Accuracy: 0.5312
+Batch no: 041, Loss on trainig: 1.8379, Accuracy: 0.5312
+Batch no: 042, Loss on trainig: 1.4014, Accuracy: 0.6406
+Batch no: 043, Loss on trainig: 1.9181, Accuracy: 0.5156
+Batch no: 044, Loss on trainig: 1.4108, Accuracy: 0.6406
+Batch no: 045, Loss on trainig: 1.5143, Accuracy: 0.5781
+Batch no: 046, Loss on trainig: 1.1742, Accuracy: 0.7188
+Batch no: 047, Loss on trainig: 1.3943, Accuracy: 0.6719
+Batch no: 048, Loss on trainig: 1.5680, Accuracy: 0.6406
+Batch no: 049, Loss on trainig: 1.4864, Accuracy: 0.5938
+Batch no: 050, Loss on trainig: 1.9387, Accuracy: 0.3594
+Batch no: 051, Loss on trainig: 1.5529, Accuracy: 0.5469
+Batch no: 052, Loss on trainig: 1.6323, Accuracy: 0.5469
+Batch no: 053, Loss on trainig: 1.7231, Accuracy: 0.5781
+Batch no: 054, Loss on trainig: 1.6743, Accuracy: 0.5312
+Batch no: 055, Loss on trainig: 1.2723, Accuracy: 0.6562
+Batch no: 056, Loss on trainig: 1.4446, Accuracy: 0.6250
+Batch no: 057, Loss on trainig: 1.3954, Accuracy: 0.6406
+Batch no: 058, Loss on trainig: 1.6555, Accuracy: 0.5781
+Batch no: 059, Loss on trainig: 1.7825, Accuracy: 0.4844
+Batch no: 060, Loss on trainig: 1.7333, Accuracy: 0.5938
+Batch no: 061, Loss on trainig: 2.0214, Accuracy: 0.4531
+Batch no: 062, Loss on trainig: 1.8644, Accuracy: 0.4375
+Batch no: 063, Loss on trainig: 1.5048, Accuracy: 0.5781
+Batch no: 064, Loss on trainig: 1.5264, Accuracy: 0.6094
+Batch no: 065, Loss on trainig: 1.7405, Accuracy: 0.5000
+Batch no: 066, Loss on trainig: 1.7895, Accuracy: 0.5156
+Batch no: 067, Loss on trainig: 1.4380, Accuracy: 0.5781
+Batch no: 068, Loss on trainig: 1.7601, Accuracy: 0.5000
+Batch no: 069, Loss on trainig: 1.2702, Accuracy: 0.5781
+Batch no: 070, Loss on trainig: 1.6971, Accuracy: 0.5000
+Batch no: 071, Loss on trainig: 1.4832, Accuracy: 0.5781
+Batch no: 072, Loss on trainig: 1.5009, Accuracy: 0.6562
+Batch no: 073, Loss on trainig: 1.7809, Accuracy: 0.4844
+Batch no: 074, Loss on trainig: 1.4647, Accuracy: 0.6250
+Batch no: 075, Loss on trainig: 1.3996, Accuracy: 0.6875
+Batch no: 076, Loss on trainig: 1.6573, Accuracy: 0.5781
+Batch no: 077, Loss on trainig: 1.7859, Accuracy: 0.5312
+Batch no: 078, Loss on trainig: 1.8909, Accuracy: 0.5625
+Batch no: 079, Loss on trainig: 1.6247, Accuracy: 0.6094
+Batch no: 080, Loss on trainig: 1.5421, Accuracy: 0.5781
+Batch no: 081, Loss on trainig: 1.8971, Accuracy: 0.4688
+Batch no: 082, Loss on trainig: 1.5556, Accuracy: 0.5625
+Batch no: 083, Loss on trainig: 1.2992, Accuracy: 0.6250
+Batch no: 084, Loss on trainig: 1.1649, Accuracy: 0.6406
+Batch no: 085, Loss on trainig: 1.2314, Accuracy: 0.6719
+Batch no: 086, Loss on trainig: 1.5939, Accuracy: 0.5469
+Batch no: 087, Loss on trainig: 1.6154, Accuracy: 0.5469
+Batch no: 088, Loss on trainig: 1.3279, Accuracy: 0.5625
+Batch no: 089, Loss on trainig: 1.6710, Accuracy: 0.5000
+Batch no: 090, Loss on trainig: 1.2103, Accuracy: 0.7344
+Batch no: 091, Loss on trainig: 1.2969, Accuracy: 0.6406
+Batch no: 092, Loss on trainig: 1.8419, Accuracy: 0.5156
+Batch no: 093, Loss on trainig: 1.7930, Accuracy: 0.5312
+Batch no: 094, Loss on trainig: 1.7774, Accuracy: 0.5312
+Batch no: 095, Loss on trainig: 1.5511, Accuracy: 0.5000
+Batch no: 096, Loss on trainig: 1.9149, Accuracy: 0.4844
+Batch no: 097, Loss on trainig: 1.8247, Accuracy: 0.5156
+Batch no: 098, Loss on trainig: 1.4983, Accuracy: 0.5781
+Batch no: 099, Loss on trainig: 1.6229, Accuracy: 0.5469
+Batch no: 100, Loss on trainig: 1.4893, Accuracy: 0.5625
+Batch no: 101, Loss on trainig: 1.3522, Accuracy: 0.5000
+Batch no: 102, Loss on trainig: 1.9291, Accuracy: 0.5000
+Epoch: 10/18
+Batch no: 000, Loss on trainig: 1.8759, Accuracy: 0.5156
+Batch no: 001, Loss on trainig: 1.3474, Accuracy: 0.6094
+Batch no: 002, Loss on trainig: 1.6314, Accuracy: 0.5312
+Batch no: 003, Loss on trainig: 1.2346, Accuracy: 0.6562
+Batch no: 004, Loss on trainig: 1.3809, Accuracy: 0.6562
+Batch no: 005, Loss on trainig: 1.3169, Accuracy: 0.6094
+Batch no: 006, Loss on trainig: 1.8462, Accuracy: 0.4688
+Batch no: 007, Loss on trainig: 1.6085, Accuracy: 0.5469
+Batch no: 008, Loss on trainig: 1.2744, Accuracy: 0.6406
+Batch no: 009, Loss on trainig: 1.3571, Accuracy: 0.5625
+Batch no: 010, Loss on trainig: 1.4106, Accuracy: 0.5938
+Batch no: 011, Loss on trainig: 1.7806, Accuracy: 0.5625
+Batch no: 012, Loss on trainig: 1.6478, Accuracy: 0.5312
+Batch no: 013, Loss on trainig: 1.4862, Accuracy: 0.5625
+Batch no: 014, Loss on trainig: 2.0156, Accuracy: 0.5000
+Batch no: 015, Loss on trainig: 1.3754, Accuracy: 0.5781
+Batch no: 016, Loss on trainig: 1.6752, Accuracy: 0.5156
+Batch no: 017, Loss on trainig: 1.6231, Accuracy: 0.5781
+Batch no: 018, Loss on trainig: 1.4334, Accuracy: 0.5938
+Batch no: 019, Loss on trainig: 1.3205, Accuracy: 0.5625
+Batch no: 020, Loss on trainig: 1.6981, Accuracy: 0.5000
+Batch no: 021, Loss on trainig: 1.4554, Accuracy: 0.6250
+Batch no: 022, Loss on trainig: 1.4095, Accuracy: 0.5938
+Batch no: 023, Loss on trainig: 1.3043, Accuracy: 0.6562
+Batch no: 024, Loss on trainig: 1.5607, Accuracy: 0.5000
+Batch no: 025, Loss on trainig: 1.6326, Accuracy: 0.5625
+Batch no: 026, Loss on trainig: 1.6773, Accuracy: 0.5156
+Batch no: 027, Loss on trainig: 1.0819, Accuracy: 0.7031
+Batch no: 028, Loss on trainig: 1.4982, Accuracy: 0.5156
+Batch no: 029, Loss on trainig: 1.7005, Accuracy: 0.5312
+Batch no: 030, Loss on trainig: 1.3365, Accuracy: 0.6250
+Batch no: 031, Loss on trainig: 1.3570, Accuracy: 0.5938
+Batch no: 032, Loss on trainig: 1.3129, Accuracy: 0.6562
+Batch no: 033, Loss on trainig: 1.4231, Accuracy: 0.5781
+Batch no: 034, Loss on trainig: 1.4101, Accuracy: 0.5625
+Batch no: 035, Loss on trainig: 1.1434, Accuracy: 0.6719
+Batch no: 036, Loss on trainig: 1.6761, Accuracy: 0.5625
+Batch no: 037, Loss on trainig: 1.7227, Accuracy: 0.5625
+Batch no: 038, Loss on trainig: 2.2841, Accuracy: 0.4844
+Batch no: 039, Loss on trainig: 1.3513, Accuracy: 0.5469
+Batch no: 040, Loss on trainig: 1.8738, Accuracy: 0.5000
+Batch no: 041, Loss on trainig: 1.3602, Accuracy: 0.5469
+Batch no: 042, Loss on trainig: 1.8465, Accuracy: 0.4688
+Batch no: 043, Loss on trainig: 1.3177, Accuracy: 0.6406
+Batch no: 044, Loss on trainig: 2.1490, Accuracy: 0.4844
+Batch no: 045, Loss on trainig: 1.4236, Accuracy: 0.5312
+Batch no: 046, Loss on trainig: 1.2440, Accuracy: 0.6094
+Batch no: 047, Loss on trainig: 1.3577, Accuracy: 0.6562
+Batch no: 048, Loss on trainig: 1.5849, Accuracy: 0.5625
+Batch no: 049, Loss on trainig: 1.2467, Accuracy: 0.7188
+Batch no: 050, Loss on trainig: 1.3645, Accuracy: 0.5781
+Batch no: 051, Loss on trainig: 1.2621, Accuracy: 0.6562
+Batch no: 052, Loss on trainig: 1.5000, Accuracy: 0.6562
+Batch no: 053, Loss on trainig: 1.5042, Accuracy: 0.5312
+Batch no: 054, Loss on trainig: 1.6452, Accuracy: 0.5625
+Batch no: 055, Loss on trainig: 1.4744, Accuracy: 0.5625
+Batch no: 056, Loss on trainig: 1.8263, Accuracy: 0.5000
+Batch no: 057, Loss on trainig: 1.9266, Accuracy: 0.4688
+Batch no: 058, Loss on trainig: 1.6727, Accuracy: 0.6250
+Batch no: 059, Loss on trainig: 1.7337, Accuracy: 0.5312
+Batch no: 060, Loss on trainig: 1.5088, Accuracy: 0.6719
+Batch no: 061, Loss on trainig: 1.7597, Accuracy: 0.5156
+Batch no: 062, Loss on trainig: 1.7737, Accuracy: 0.4375
+Batch no: 063, Loss on trainig: 1.5323, Accuracy: 0.4688
+Batch no: 064, Loss on trainig: 1.7210, Accuracy: 0.5156
+Batch no: 065, Loss on trainig: 1.4757, Accuracy: 0.5625
+Batch no: 066, Loss on trainig: 1.2953, Accuracy: 0.7031
+Batch no: 067, Loss on trainig: 1.6156, Accuracy: 0.5938
+Batch no: 068, Loss on trainig: 1.6581, Accuracy: 0.5625
+Batch no: 069, Loss on trainig: 1.5353, Accuracy: 0.6094
+Batch no: 070, Loss on trainig: 1.6226, Accuracy: 0.5781
+Batch no: 071, Loss on trainig: 1.2793, Accuracy: 0.6406
+Batch no: 072, Loss on trainig: 1.1789, Accuracy: 0.6875
+Batch no: 073, Loss on trainig: 1.4063, Accuracy: 0.5938
+Batch no: 074, Loss on trainig: 1.4945, Accuracy: 0.6094
+Batch no: 075, Loss on trainig: 1.8090, Accuracy: 0.4688
+Batch no: 076, Loss on trainig: 1.7648, Accuracy: 0.5156
+Batch no: 077, Loss on trainig: 1.5815, Accuracy: 0.5938
+Batch no: 078, Loss on trainig: 1.8028, Accuracy: 0.6094
+Batch no: 079, Loss on trainig: 1.8860, Accuracy: 0.4219
+Batch no: 080, Loss on trainig: 1.6628, Accuracy: 0.5625
+Batch no: 081, Loss on trainig: 1.6984, Accuracy: 0.5156
+Batch no: 082, Loss on trainig: 1.2181, Accuracy: 0.6875
+Batch no: 083, Loss on trainig: 1.9290, Accuracy: 0.4062
+Batch no: 084, Loss on trainig: 1.5393, Accuracy: 0.6094
+Batch no: 085, Loss on trainig: 1.8217, Accuracy: 0.4844
+Batch no: 086, Loss on trainig: 1.4790, Accuracy: 0.6250
+Batch no: 087, Loss on trainig: 1.5361, Accuracy: 0.5781
+Batch no: 088, Loss on trainig: 1.2629, Accuracy: 0.6094
+Batch no: 089, Loss on trainig: 1.5597, Accuracy: 0.4688
+Batch no: 090, Loss on trainig: 1.2557, Accuracy: 0.6406
+Batch no: 091, Loss on trainig: 1.6497, Accuracy: 0.4688
+Batch no: 092, Loss on trainig: 1.3610, Accuracy: 0.6875
+Batch no: 093, Loss on trainig: 1.5155, Accuracy: 0.5312
+Batch no: 094, Loss on trainig: 1.8763, Accuracy: 0.5312
+Batch no: 095, Loss on trainig: 1.5803, Accuracy: 0.5312
+Batch no: 096, Loss on trainig: 1.4993, Accuracy: 0.5938
+Batch no: 097, Loss on trainig: 1.5459, Accuracy: 0.6094
+Batch no: 098, Loss on trainig: 1.8329, Accuracy: 0.5312
+Batch no: 099, Loss on trainig: 1.3329, Accuracy: 0.6094
+Batch no: 100, Loss on trainig: 1.4787, Accuracy: 0.6250
+Batch no: 101, Loss on trainig: 1.4719, Accuracy: 0.5938
+Batch no: 102, Loss on trainig: 1.2493, Accuracy: 0.6250
+Epoch: 11/18
+Batch no: 000, Loss on trainig: 1.3855, Accuracy: 0.5938
+Batch no: 001, Loss on trainig: 1.5255, Accuracy: 0.5781
+Batch no: 002, Loss on trainig: 1.5899, Accuracy: 0.5469
+Batch no: 003, Loss on trainig: 1.2887, Accuracy: 0.5938
+Batch no: 004, Loss on trainig: 1.2356, Accuracy: 0.6875
+Batch no: 005, Loss on trainig: 1.5548, Accuracy: 0.5000
+Batch no: 006, Loss on trainig: 1.7497, Accuracy: 0.4531
+Batch no: 007, Loss on trainig: 1.5366, Accuracy: 0.6094
+Batch no: 008, Loss on trainig: 1.5358, Accuracy: 0.6094
+Batch no: 009, Loss on trainig: 1.2402, Accuracy: 0.6250
+Batch no: 010, Loss on trainig: 1.1305, Accuracy: 0.6562
+Batch no: 011, Loss on trainig: 1.3103, Accuracy: 0.6250
+Batch no: 012, Loss on trainig: 1.6009, Accuracy: 0.5625
+Batch no: 013, Loss on trainig: 1.7706, Accuracy: 0.4844
+Batch no: 014, Loss on trainig: 1.5694, Accuracy: 0.5938
+Batch no: 015, Loss on trainig: 1.6849, Accuracy: 0.5156
+Batch no: 016, Loss on trainig: 1.1315, Accuracy: 0.6719
+Batch no: 017, Loss on trainig: 1.2704, Accuracy: 0.6250
+Batch no: 018, Loss on trainig: 1.3575, Accuracy: 0.5781
+Batch no: 019, Loss on trainig: 1.6104, Accuracy: 0.5312
+Batch no: 020, Loss on trainig: 1.8050, Accuracy: 0.5156
+Batch no: 021, Loss on trainig: 0.9700, Accuracy: 0.7188
+Batch no: 022, Loss on trainig: 1.5925, Accuracy: 0.5938
+Batch no: 023, Loss on trainig: 1.3116, Accuracy: 0.5781
+Batch no: 024, Loss on trainig: 1.5157, Accuracy: 0.5938
+Batch no: 025, Loss on trainig: 1.0420, Accuracy: 0.6719
+Batch no: 026, Loss on trainig: 1.3511, Accuracy: 0.5469
+Batch no: 027, Loss on trainig: 1.3825, Accuracy: 0.5469
+Batch no: 028, Loss on trainig: 1.5490, Accuracy: 0.5469
+Batch no: 029, Loss on trainig: 1.6389, Accuracy: 0.6406
+Batch no: 030, Loss on trainig: 1.3995, Accuracy: 0.5781
+Batch no: 031, Loss on trainig: 1.9974, Accuracy: 0.5312
+Batch no: 032, Loss on trainig: 1.4382, Accuracy: 0.5625
+Batch no: 033, Loss on trainig: 1.7021, Accuracy: 0.4844
+Batch no: 034, Loss on trainig: 1.4372, Accuracy: 0.6094
+Batch no: 035, Loss on trainig: 1.3958, Accuracy: 0.5938
+Batch no: 036, Loss on trainig: 1.1996, Accuracy: 0.7500
+Batch no: 037, Loss on trainig: 1.1947, Accuracy: 0.6250
+Batch no: 038, Loss on trainig: 1.8523, Accuracy: 0.4219
+Batch no: 039, Loss on trainig: 1.3103, Accuracy: 0.6250
+Batch no: 040, Loss on trainig: 1.4428, Accuracy: 0.6875
+Batch no: 041, Loss on trainig: 1.4287, Accuracy: 0.5938
+Batch no: 042, Loss on trainig: 1.7677, Accuracy: 0.4688
+Batch no: 043, Loss on trainig: 1.6670, Accuracy: 0.5625
+Batch no: 044, Loss on trainig: 1.6079, Accuracy: 0.5469
+Batch no: 045, Loss on trainig: 1.2558, Accuracy: 0.7188
+Batch no: 046, Loss on trainig: 1.6164, Accuracy: 0.5469
+Batch no: 047, Loss on trainig: 1.8394, Accuracy: 0.5938
+Batch no: 048, Loss on trainig: 1.6055, Accuracy: 0.5781
+Batch no: 049, Loss on trainig: 1.4169, Accuracy: 0.5781
+Batch no: 050, Loss on trainig: 1.5376, Accuracy: 0.6250
+Batch no: 051, Loss on trainig: 1.5044, Accuracy: 0.5625
+Batch no: 052, Loss on trainig: 1.2887, Accuracy: 0.6406
+Batch no: 053, Loss on trainig: 1.5195, Accuracy: 0.5938
+Batch no: 054, Loss on trainig: 1.6422, Accuracy: 0.5469
+Batch no: 055, Loss on trainig: 1.6531, Accuracy: 0.5469
+Batch no: 056, Loss on trainig: 1.4878, Accuracy: 0.6250
+Batch no: 057, Loss on trainig: 1.6718, Accuracy: 0.5000
+Batch no: 058, Loss on trainig: 1.2290, Accuracy: 0.6562
+Batch no: 059, Loss on trainig: 1.3350, Accuracy: 0.7031
+Batch no: 060, Loss on trainig: 1.8471, Accuracy: 0.5156
+Batch no: 061, Loss on trainig: 1.3212, Accuracy: 0.7031
+Batch no: 062, Loss on trainig: 1.5758, Accuracy: 0.6406
+Batch no: 063, Loss on trainig: 1.8272, Accuracy: 0.4688
+Batch no: 064, Loss on trainig: 1.4515, Accuracy: 0.6406
+Batch no: 065, Loss on trainig: 1.5897, Accuracy: 0.5938
+Batch no: 066, Loss on trainig: 1.1804, Accuracy: 0.6406
+Batch no: 067, Loss on trainig: 1.2587, Accuracy: 0.6094
+Batch no: 068, Loss on trainig: 1.3010, Accuracy: 0.5469
+Batch no: 069, Loss on trainig: 1.2712, Accuracy: 0.6094
+Batch no: 070, Loss on trainig: 1.4891, Accuracy: 0.5781
+Batch no: 071, Loss on trainig: 1.4429, Accuracy: 0.5781
+Batch no: 072, Loss on trainig: 1.2857, Accuracy: 0.5781
+Batch no: 073, Loss on trainig: 1.4432, Accuracy: 0.5938
+Batch no: 074, Loss on trainig: 1.4245, Accuracy: 0.6094
+Batch no: 075, Loss on trainig: 1.6986, Accuracy: 0.5156
+Batch no: 076, Loss on trainig: 1.5203, Accuracy: 0.5625
+Batch no: 077, Loss on trainig: 1.5130, Accuracy: 0.5781
+Batch no: 078, Loss on trainig: 1.8369, Accuracy: 0.5312
+Batch no: 079, Loss on trainig: 1.4117, Accuracy: 0.6094
+Batch no: 080, Loss on trainig: 1.3765, Accuracy: 0.6094
+Batch no: 081, Loss on trainig: 1.6969, Accuracy: 0.5469
+Batch no: 082, Loss on trainig: 1.2369, Accuracy: 0.6562
+Batch no: 083, Loss on trainig: 1.9143, Accuracy: 0.5156
+Batch no: 084, Loss on trainig: 1.2255, Accuracy: 0.6875
+Batch no: 085, Loss on trainig: 1.4840, Accuracy: 0.5781
+Batch no: 086, Loss on trainig: 1.4212, Accuracy: 0.6250
+Batch no: 087, Loss on trainig: 1.4534, Accuracy: 0.5312
+Batch no: 088, Loss on trainig: 1.6361, Accuracy: 0.5000
+Batch no: 089, Loss on trainig: 1.3519, Accuracy: 0.6406
+Batch no: 090, Loss on trainig: 1.7434, Accuracy: 0.4844
+Batch no: 091, Loss on trainig: 1.6494, Accuracy: 0.5156
+Batch no: 092, Loss on trainig: 1.5978, Accuracy: 0.5625
+Batch no: 093, Loss on trainig: 1.3259, Accuracy: 0.6719
+Batch no: 094, Loss on trainig: 1.6012, Accuracy: 0.5156
+Batch no: 095, Loss on trainig: 1.6752, Accuracy: 0.5781
+Batch no: 096, Loss on trainig: 1.6410, Accuracy: 0.5781
+Batch no: 097, Loss on trainig: 1.4734, Accuracy: 0.6406
+Batch no: 098, Loss on trainig: 1.3595, Accuracy: 0.5938
+Batch no: 099, Loss on trainig: 1.4956, Accuracy: 0.5625
+Batch no: 100, Loss on trainig: 1.5078, Accuracy: 0.4844
+Batch no: 101, Loss on trainig: 1.2810, Accuracy: 0.6719
+Batch no: 102, Loss on trainig: 1.5117, Accuracy: 0.6250
+Epoch: 12/18
+Batch no: 000, Loss on trainig: 1.4738, Accuracy: 0.5938
+Batch no: 001, Loss on trainig: 1.1805, Accuracy: 0.6562
+Batch no: 002, Loss on trainig: 1.7562, Accuracy: 0.5469
+Batch no: 003, Loss on trainig: 1.4832, Accuracy: 0.5938
+Batch no: 004, Loss on trainig: 1.4339, Accuracy: 0.5781
+Batch no: 005, Loss on trainig: 1.6768, Accuracy: 0.5312
+Batch no: 006, Loss on trainig: 1.6564, Accuracy: 0.5156
+Batch no: 007, Loss on trainig: 1.4059, Accuracy: 0.6094
+Batch no: 008, Loss on trainig: 1.8086, Accuracy: 0.5469
+Batch no: 009, Loss on trainig: 1.5746, Accuracy: 0.6094
+Batch no: 010, Loss on trainig: 1.3935, Accuracy: 0.6406
+Batch no: 011, Loss on trainig: 1.8728, Accuracy: 0.4375
+Batch no: 012, Loss on trainig: 1.1361, Accuracy: 0.6719
+Batch no: 013, Loss on trainig: 1.8132, Accuracy: 0.5625
+Batch no: 014, Loss on trainig: 1.2731, Accuracy: 0.6875
+Batch no: 015, Loss on trainig: 1.3307, Accuracy: 0.6406
+Batch no: 016, Loss on trainig: 1.5019, Accuracy: 0.5781
+Batch no: 017, Loss on trainig: 1.4952, Accuracy: 0.5469
+Batch no: 018, Loss on trainig: 1.6876, Accuracy: 0.4844
+Batch no: 019, Loss on trainig: 1.7635, Accuracy: 0.5312
+Batch no: 020, Loss on trainig: 1.5896, Accuracy: 0.5469
+Batch no: 021, Loss on trainig: 1.3402, Accuracy: 0.5938
+Batch no: 022, Loss on trainig: 1.4233, Accuracy: 0.6562
+Batch no: 023, Loss on trainig: 1.8146, Accuracy: 0.5312
+Batch no: 024, Loss on trainig: 1.2722, Accuracy: 0.6406
+Batch no: 025, Loss on trainig: 1.4938, Accuracy: 0.5156
+Batch no: 026, Loss on trainig: 1.0561, Accuracy: 0.6719
+Batch no: 027, Loss on trainig: 1.3779, Accuracy: 0.6406
+Batch no: 028, Loss on trainig: 1.2891, Accuracy: 0.6562
+Batch no: 029, Loss on trainig: 1.6659, Accuracy: 0.5625
+Batch no: 030, Loss on trainig: 1.6571, Accuracy: 0.5625
+Batch no: 031, Loss on trainig: 1.5110, Accuracy: 0.5781
+Batch no: 032, Loss on trainig: 1.6427, Accuracy: 0.5938
+Batch no: 033, Loss on trainig: 1.3996, Accuracy: 0.6406
+Batch no: 034, Loss on trainig: 0.9569, Accuracy: 0.6562
+Batch no: 035, Loss on trainig: 1.5782, Accuracy: 0.5938
+Batch no: 036, Loss on trainig: 1.4937, Accuracy: 0.6406
+Batch no: 037, Loss on trainig: 1.3815, Accuracy: 0.6250
+Batch no: 038, Loss on trainig: 1.2217, Accuracy: 0.6562
+Batch no: 039, Loss on trainig: 1.1073, Accuracy: 0.7031
+Batch no: 040, Loss on trainig: 1.5438, Accuracy: 0.5938
+Batch no: 041, Loss on trainig: 1.4291, Accuracy: 0.6406
+Batch no: 042, Loss on trainig: 1.3799, Accuracy: 0.5625
+Batch no: 043, Loss on trainig: 1.6253, Accuracy: 0.6094
+Batch no: 044, Loss on trainig: 1.6444, Accuracy: 0.5781
+Batch no: 045, Loss on trainig: 1.3219, Accuracy: 0.6562
+Batch no: 046, Loss on trainig: 1.6231, Accuracy: 0.6250
+Batch no: 047, Loss on trainig: 1.6090, Accuracy: 0.5156
+Batch no: 048, Loss on trainig: 1.4368, Accuracy: 0.6562
+Batch no: 049, Loss on trainig: 1.4719, Accuracy: 0.5312
+Batch no: 050, Loss on trainig: 1.4467, Accuracy: 0.6406
+Batch no: 051, Loss on trainig: 1.9859, Accuracy: 0.4844
+Batch no: 052, Loss on trainig: 1.4667, Accuracy: 0.5469
+Batch no: 053, Loss on trainig: 1.4806, Accuracy: 0.5625
+Batch no: 054, Loss on trainig: 1.1851, Accuracy: 0.6562
+Batch no: 055, Loss on trainig: 1.4661, Accuracy: 0.5938
+Batch no: 056, Loss on trainig: 1.4384, Accuracy: 0.5312
+Batch no: 057, Loss on trainig: 1.8823, Accuracy: 0.5469
+Batch no: 058, Loss on trainig: 1.7593, Accuracy: 0.5000
+Batch no: 059, Loss on trainig: 1.1872, Accuracy: 0.6875
+Batch no: 060, Loss on trainig: 1.0517, Accuracy: 0.6875
+Batch no: 061, Loss on trainig: 1.3264, Accuracy: 0.5781
+Batch no: 062, Loss on trainig: 1.2695, Accuracy: 0.5781
+Batch no: 063, Loss on trainig: 1.5067, Accuracy: 0.6562
+Batch no: 064, Loss on trainig: 2.0426, Accuracy: 0.4844
+Batch no: 065, Loss on trainig: 1.7341, Accuracy: 0.5781
+Batch no: 066, Loss on trainig: 1.5614, Accuracy: 0.6094
+Batch no: 067, Loss on trainig: 1.7519, Accuracy: 0.4531
+Batch no: 068, Loss on trainig: 1.1747, Accuracy: 0.6719
+Batch no: 069, Loss on trainig: 1.4913, Accuracy: 0.5938
+Batch no: 070, Loss on trainig: 1.3406, Accuracy: 0.7031
+Batch no: 071, Loss on trainig: 1.9133, Accuracy: 0.4219
+Batch no: 072, Loss on trainig: 1.2086, Accuracy: 0.6719
+Batch no: 073, Loss on trainig: 1.1550, Accuracy: 0.7031
+Batch no: 074, Loss on trainig: 1.4148, Accuracy: 0.5469
+Batch no: 075, Loss on trainig: 1.3456, Accuracy: 0.6094
+Batch no: 076, Loss on trainig: 1.4321, Accuracy: 0.6094
+Batch no: 077, Loss on trainig: 1.1606, Accuracy: 0.6875
+Batch no: 078, Loss on trainig: 1.5351, Accuracy: 0.5312
+Batch no: 079, Loss on trainig: 1.4683, Accuracy: 0.6406
+Batch no: 080, Loss on trainig: 1.9086, Accuracy: 0.4688
+Batch no: 081, Loss on trainig: 1.2289, Accuracy: 0.6562
+Batch no: 082, Loss on trainig: 1.4757, Accuracy: 0.5781
+Batch no: 083, Loss on trainig: 1.3383, Accuracy: 0.6250
+Batch no: 084, Loss on trainig: 1.2456, Accuracy: 0.6250
+Batch no: 085, Loss on trainig: 1.2595, Accuracy: 0.7500
+Batch no: 086, Loss on trainig: 1.7372, Accuracy: 0.5781
+Batch no: 087, Loss on trainig: 1.2600, Accuracy: 0.6406
+Batch no: 088, Loss on trainig: 1.8580, Accuracy: 0.5469
+Batch no: 089, Loss on trainig: 1.5852, Accuracy: 0.5312
+Batch no: 090, Loss on trainig: 1.3432, Accuracy: 0.6250
+Batch no: 091, Loss on trainig: 1.5117, Accuracy: 0.6562
+Batch no: 092, Loss on trainig: 1.3725, Accuracy: 0.6094
+Batch no: 093, Loss on trainig: 1.3331, Accuracy: 0.6406
+Batch no: 094, Loss on trainig: 1.5572, Accuracy: 0.6250
+Batch no: 095, Loss on trainig: 1.9943, Accuracy: 0.4375
+Batch no: 096, Loss on trainig: 1.5154, Accuracy: 0.5781
+Batch no: 097, Loss on trainig: 1.5963, Accuracy: 0.6094
+Batch no: 098, Loss on trainig: 1.4174, Accuracy: 0.6094
+Batch no: 099, Loss on trainig: 1.5490, Accuracy: 0.6094
+Batch no: 100, Loss on trainig: 1.1600, Accuracy: 0.6562
+Batch no: 101, Loss on trainig: 1.3925, Accuracy: 0.5781
+Batch no: 102, Loss on trainig: 0.9875, Accuracy: 0.7500
+Epoch: 13/18
+Batch no: 000, Loss on trainig: 1.2586, Accuracy: 0.5938
+Batch no: 001, Loss on trainig: 1.6688, Accuracy: 0.5312
+Batch no: 002, Loss on trainig: 1.4430, Accuracy: 0.5938
+Batch no: 003, Loss on trainig: 1.8107, Accuracy: 0.5312
+Batch no: 004, Loss on trainig: 1.2292, Accuracy: 0.6094
+Batch no: 005, Loss on trainig: 1.4186, Accuracy: 0.5938
+Batch no: 006, Loss on trainig: 1.6772, Accuracy: 0.5312
+Batch no: 007, Loss on trainig: 1.4824, Accuracy: 0.5781
+Batch no: 008, Loss on trainig: 1.4979, Accuracy: 0.5781
+Batch no: 009, Loss on trainig: 1.3389, Accuracy: 0.5938
+Batch no: 010, Loss on trainig: 1.2389, Accuracy: 0.6719
+Batch no: 011, Loss on trainig: 1.2407, Accuracy: 0.5938
+Batch no: 012, Loss on trainig: 1.4285, Accuracy: 0.5469
+Batch no: 013, Loss on trainig: 1.1658, Accuracy: 0.6562
+Batch no: 014, Loss on trainig: 1.6577, Accuracy: 0.5625
+Batch no: 015, Loss on trainig: 1.5283, Accuracy: 0.5469
+Batch no: 016, Loss on trainig: 1.4849, Accuracy: 0.5625
+Batch no: 017, Loss on trainig: 1.8276, Accuracy: 0.4844
+Batch no: 018, Loss on trainig: 1.3478, Accuracy: 0.6406
+Batch no: 019, Loss on trainig: 1.4829, Accuracy: 0.6094
+Batch no: 020, Loss on trainig: 1.5170, Accuracy: 0.6719
+Batch no: 021, Loss on trainig: 1.1877, Accuracy: 0.6250
+Batch no: 022, Loss on trainig: 1.3357, Accuracy: 0.6406
+Batch no: 023, Loss on trainig: 1.2184, Accuracy: 0.7031
+Batch no: 024, Loss on trainig: 1.4482, Accuracy: 0.5625
+Batch no: 025, Loss on trainig: 1.5335, Accuracy: 0.5938
+Batch no: 026, Loss on trainig: 1.2280, Accuracy: 0.6562
+Batch no: 027, Loss on trainig: 1.3285, Accuracy: 0.5781
+Batch no: 028, Loss on trainig: 1.4198, Accuracy: 0.5781
+Batch no: 029, Loss on trainig: 1.5295, Accuracy: 0.5781
+Batch no: 030, Loss on trainig: 1.4736, Accuracy: 0.5312
+Batch no: 031, Loss on trainig: 1.3745, Accuracy: 0.6094
+Batch no: 032, Loss on trainig: 1.4652, Accuracy: 0.5938
+Batch no: 033, Loss on trainig: 1.1734, Accuracy: 0.7031
+Batch no: 034, Loss on trainig: 1.4979, Accuracy: 0.5781
+Batch no: 035, Loss on trainig: 1.4659, Accuracy: 0.5469
+Batch no: 036, Loss on trainig: 1.8525, Accuracy: 0.4375
+Batch no: 037, Loss on trainig: 1.9887, Accuracy: 0.4688
+Batch no: 038, Loss on trainig: 1.2661, Accuracy: 0.6250
+Batch no: 039, Loss on trainig: 1.3276, Accuracy: 0.6250
+Batch no: 040, Loss on trainig: 1.2190, Accuracy: 0.7188
+Batch no: 041, Loss on trainig: 1.3598, Accuracy: 0.5781
+Batch no: 042, Loss on trainig: 1.0703, Accuracy: 0.6719
+Batch no: 043, Loss on trainig: 1.3961, Accuracy: 0.5938
+Batch no: 044, Loss on trainig: 1.3552, Accuracy: 0.6094
+Batch no: 045, Loss on trainig: 1.4750, Accuracy: 0.6094
+Batch no: 046, Loss on trainig: 1.5592, Accuracy: 0.5625
+Batch no: 047, Loss on trainig: 1.3307, Accuracy: 0.6875
+Batch no: 048, Loss on trainig: 1.6039, Accuracy: 0.6406
+Batch no: 049, Loss on trainig: 1.4017, Accuracy: 0.5781
+Batch no: 050, Loss on trainig: 1.3634, Accuracy: 0.5469
+Batch no: 051, Loss on trainig: 1.2297, Accuracy: 0.5781
+Batch no: 052, Loss on trainig: 1.3530, Accuracy: 0.6562
+Batch no: 053, Loss on trainig: 1.2615, Accuracy: 0.5938
+Batch no: 054, Loss on trainig: 1.4956, Accuracy: 0.5781
+Batch no: 055, Loss on trainig: 1.4938, Accuracy: 0.5469
+Batch no: 056, Loss on trainig: 1.2748, Accuracy: 0.6406
+Batch no: 057, Loss on trainig: 1.3331, Accuracy: 0.6562
+Batch no: 058, Loss on trainig: 1.4856, Accuracy: 0.5312
+Batch no: 059, Loss on trainig: 1.6263, Accuracy: 0.5781
+Batch no: 060, Loss on trainig: 1.6510, Accuracy: 0.5625
+Batch no: 061, Loss on trainig: 1.2593, Accuracy: 0.5469
+Batch no: 062, Loss on trainig: 1.3053, Accuracy: 0.6250
+Batch no: 063, Loss on trainig: 1.6958, Accuracy: 0.5625
+Batch no: 064, Loss on trainig: 1.4816, Accuracy: 0.5938
+Batch no: 065, Loss on trainig: 1.6293, Accuracy: 0.5000
+Batch no: 066, Loss on trainig: 1.0639, Accuracy: 0.7344
+Batch no: 067, Loss on trainig: 1.6016, Accuracy: 0.5469
+Batch no: 068, Loss on trainig: 1.4882, Accuracy: 0.5312
+Batch no: 069, Loss on trainig: 1.7547, Accuracy: 0.5469
+Batch no: 070, Loss on trainig: 1.3549, Accuracy: 0.6094
+Batch no: 071, Loss on trainig: 1.3152, Accuracy: 0.6719
+Batch no: 072, Loss on trainig: 1.3102, Accuracy: 0.6719
+Batch no: 073, Loss on trainig: 1.6113, Accuracy: 0.5938
+Batch no: 074, Loss on trainig: 1.3784, Accuracy: 0.5469
+Batch no: 075, Loss on trainig: 1.3898, Accuracy: 0.5938
+Batch no: 076, Loss on trainig: 1.3606, Accuracy: 0.6250
+Batch no: 077, Loss on trainig: 1.2076, Accuracy: 0.6250
+Batch no: 078, Loss on trainig: 1.4749, Accuracy: 0.5938
+Batch no: 079, Loss on trainig: 1.4067, Accuracy: 0.6094
+Batch no: 080, Loss on trainig: 1.8581, Accuracy: 0.5312
+Batch no: 081, Loss on trainig: 1.3002, Accuracy: 0.6250
+Batch no: 082, Loss on trainig: 1.3465, Accuracy: 0.5938
+Batch no: 083, Loss on trainig: 1.6668, Accuracy: 0.5781
+Batch no: 084, Loss on trainig: 1.6629, Accuracy: 0.5312
+Batch no: 085, Loss on trainig: 1.3595, Accuracy: 0.5625
+Batch no: 086, Loss on trainig: 1.0170, Accuracy: 0.6875
+Batch no: 087, Loss on trainig: 1.1783, Accuracy: 0.7031
+Batch no: 088, Loss on trainig: 1.3382, Accuracy: 0.6406
+Batch no: 089, Loss on trainig: 1.2449, Accuracy: 0.6406
+Batch no: 090, Loss on trainig: 1.6005, Accuracy: 0.5469
+Batch no: 091, Loss on trainig: 1.6412, Accuracy: 0.5156
+Batch no: 092, Loss on trainig: 1.5677, Accuracy: 0.5938
+Batch no: 093, Loss on trainig: 1.3412, Accuracy: 0.5938
+Batch no: 094, Loss on trainig: 1.7111, Accuracy: 0.5312
+Batch no: 095, Loss on trainig: 1.4374, Accuracy: 0.6562
+Batch no: 096, Loss on trainig: 1.4001, Accuracy: 0.5625
+Batch no: 097, Loss on trainig: 1.3026, Accuracy: 0.6875
+Batch no: 098, Loss on trainig: 1.3292, Accuracy: 0.6250
+Batch no: 099, Loss on trainig: 1.5365, Accuracy: 0.6094
+Batch no: 100, Loss on trainig: 1.2415, Accuracy: 0.6875
+Batch no: 101, Loss on trainig: 1.3026, Accuracy: 0.5469
+Batch no: 102, Loss on trainig: 1.2809, Accuracy: 0.6250
+Epoch: 14/18
+Batch no: 000, Loss on trainig: 1.4144, Accuracy: 0.6406
+Batch no: 001, Loss on trainig: 1.1537, Accuracy: 0.6719
+Batch no: 002, Loss on trainig: 1.4144, Accuracy: 0.5312
+Batch no: 003, Loss on trainig: 1.1436, Accuracy: 0.6406
+Batch no: 004, Loss on trainig: 1.2530, Accuracy: 0.6406
+Batch no: 005, Loss on trainig: 1.4001, Accuracy: 0.5938
+Batch no: 006, Loss on trainig: 1.2583, Accuracy: 0.6094
+Batch no: 007, Loss on trainig: 1.3160, Accuracy: 0.6406
+Batch no: 008, Loss on trainig: 1.5016, Accuracy: 0.5781
+Batch no: 009, Loss on trainig: 1.6395, Accuracy: 0.4844
+Batch no: 010, Loss on trainig: 1.2561, Accuracy: 0.5469
+Batch no: 011, Loss on trainig: 1.3520, Accuracy: 0.5938
+Batch no: 012, Loss on trainig: 1.0772, Accuracy: 0.7031
+Batch no: 013, Loss on trainig: 1.3637, Accuracy: 0.5938
+Batch no: 014, Loss on trainig: 1.5878, Accuracy: 0.5469
+Batch no: 015, Loss on trainig: 1.6082, Accuracy: 0.5938
+Batch no: 016, Loss on trainig: 1.2026, Accuracy: 0.5938
+Batch no: 017, Loss on trainig: 1.2777, Accuracy: 0.6406
+Batch no: 018, Loss on trainig: 1.5398, Accuracy: 0.5625
+Batch no: 019, Loss on trainig: 1.3428, Accuracy: 0.5938
+Batch no: 020, Loss on trainig: 1.5767, Accuracy: 0.5625
+Batch no: 021, Loss on trainig: 1.7083, Accuracy: 0.5469
+Batch no: 022, Loss on trainig: 1.2375, Accuracy: 0.5781
+Batch no: 023, Loss on trainig: 1.7234, Accuracy: 0.5781
+Batch no: 024, Loss on trainig: 1.3519, Accuracy: 0.6875
+Batch no: 025, Loss on trainig: 1.1152, Accuracy: 0.6562
+Batch no: 026, Loss on trainig: 1.2859, Accuracy: 0.6406
+Batch no: 027, Loss on trainig: 1.5045, Accuracy: 0.6094
+Batch no: 028, Loss on trainig: 1.2435, Accuracy: 0.6719
+Batch no: 029, Loss on trainig: 1.5790, Accuracy: 0.5469
+Batch no: 030, Loss on trainig: 1.4355, Accuracy: 0.5938
+Batch no: 031, Loss on trainig: 1.4798, Accuracy: 0.6094
+Batch no: 032, Loss on trainig: 1.2332, Accuracy: 0.6875
+Batch no: 033, Loss on trainig: 1.2032, Accuracy: 0.6250
+Batch no: 034, Loss on trainig: 1.7690, Accuracy: 0.5625
+Batch no: 035, Loss on trainig: 1.3909, Accuracy: 0.6562
+Batch no: 036, Loss on trainig: 1.3622, Accuracy: 0.5781
+Batch no: 037, Loss on trainig: 1.0674, Accuracy: 0.6406
+Batch no: 038, Loss on trainig: 1.2097, Accuracy: 0.6562
+Batch no: 039, Loss on trainig: 1.4738, Accuracy: 0.5938
+Batch no: 040, Loss on trainig: 1.4210, Accuracy: 0.6250
+Batch no: 041, Loss on trainig: 1.5319, Accuracy: 0.6250
+Batch no: 042, Loss on trainig: 0.9395, Accuracy: 0.7031
+Batch no: 043, Loss on trainig: 1.3148, Accuracy: 0.7031
+Batch no: 044, Loss on trainig: 1.4594, Accuracy: 0.5625
+Batch no: 045, Loss on trainig: 1.1765, Accuracy: 0.6406
+Batch no: 046, Loss on trainig: 1.3101, Accuracy: 0.5938
+Batch no: 047, Loss on trainig: 1.3362, Accuracy: 0.6719
+Batch no: 048, Loss on trainig: 1.2685, Accuracy: 0.5938
+Batch no: 049, Loss on trainig: 1.0650, Accuracy: 0.5938
+Batch no: 050, Loss on trainig: 1.4244, Accuracy: 0.5781
+Batch no: 051, Loss on trainig: 1.5604, Accuracy: 0.5938
+Batch no: 052, Loss on trainig: 1.5699, Accuracy: 0.5312
+Batch no: 053, Loss on trainig: 1.6050, Accuracy: 0.5469
+Batch no: 054, Loss on trainig: 1.3305, Accuracy: 0.6094
+Batch no: 055, Loss on trainig: 1.3917, Accuracy: 0.6406
+Batch no: 056, Loss on trainig: 1.3460, Accuracy: 0.6094
+Batch no: 057, Loss on trainig: 1.1839, Accuracy: 0.7188
+Batch no: 058, Loss on trainig: 1.4344, Accuracy: 0.5938
+Batch no: 059, Loss on trainig: 1.4124, Accuracy: 0.5781
+Batch no: 060, Loss on trainig: 1.5799, Accuracy: 0.5781
+Batch no: 061, Loss on trainig: 1.3700, Accuracy: 0.6406
+Batch no: 062, Loss on trainig: 1.2856, Accuracy: 0.6250
+Batch no: 063, Loss on trainig: 1.4255, Accuracy: 0.5781
+Batch no: 064, Loss on trainig: 1.5167, Accuracy: 0.6094
+Batch no: 065, Loss on trainig: 1.4472, Accuracy: 0.5781
+Batch no: 066, Loss on trainig: 1.4566, Accuracy: 0.6406
+Batch no: 067, Loss on trainig: 1.2249, Accuracy: 0.5625
+Batch no: 068, Loss on trainig: 1.5945, Accuracy: 0.5781
+Batch no: 069, Loss on trainig: 1.7623, Accuracy: 0.5938
+Batch no: 070, Loss on trainig: 1.2627, Accuracy: 0.5781
+Batch no: 071, Loss on trainig: 1.6409, Accuracy: 0.5156
+Batch no: 072, Loss on trainig: 1.6334, Accuracy: 0.5469
+Batch no: 073, Loss on trainig: 1.2446, Accuracy: 0.6094
+Batch no: 074, Loss on trainig: 1.2999, Accuracy: 0.5938
+Batch no: 075, Loss on trainig: 1.1003, Accuracy: 0.6719
+Batch no: 076, Loss on trainig: 1.3252, Accuracy: 0.6562
+Batch no: 077, Loss on trainig: 1.3309, Accuracy: 0.5938
+Batch no: 078, Loss on trainig: 1.3259, Accuracy: 0.6406
+Batch no: 079, Loss on trainig: 1.2477, Accuracy: 0.6562
+Batch no: 080, Loss on trainig: 1.1351, Accuracy: 0.6719
+Batch no: 081, Loss on trainig: 1.4395, Accuracy: 0.5938
+Batch no: 082, Loss on trainig: 1.4074, Accuracy: 0.6406
+Batch no: 083, Loss on trainig: 1.5811, Accuracy: 0.5156
+Batch no: 084, Loss on trainig: 1.2561, Accuracy: 0.6406
+Batch no: 085, Loss on trainig: 1.7354, Accuracy: 0.6094
+Batch no: 086, Loss on trainig: 2.1103, Accuracy: 0.5469
+Batch no: 087, Loss on trainig: 1.5478, Accuracy: 0.6094
+Batch no: 088, Loss on trainig: 1.4085, Accuracy: 0.6250
+Batch no: 089, Loss on trainig: 1.4231, Accuracy: 0.5938
+Batch no: 090, Loss on trainig: 1.3190, Accuracy: 0.6406
+Batch no: 091, Loss on trainig: 1.5502, Accuracy: 0.5781
+Batch no: 092, Loss on trainig: 1.3529, Accuracy: 0.6719
+Batch no: 093, Loss on trainig: 1.3587, Accuracy: 0.5938
+Batch no: 094, Loss on trainig: 1.5209, Accuracy: 0.5000
+Batch no: 095, Loss on trainig: 1.4306, Accuracy: 0.6250
+Batch no: 096, Loss on trainig: 1.2574, Accuracy: 0.6094
+Batch no: 097, Loss on trainig: 1.5402, Accuracy: 0.5469
+Batch no: 098, Loss on trainig: 1.1662, Accuracy: 0.6875
+Batch no: 099, Loss on trainig: 1.3476, Accuracy: 0.5781
+Batch no: 100, Loss on trainig: 1.4826, Accuracy: 0.6250
+Batch no: 101, Loss on trainig: 1.4794, Accuracy: 0.5781
+Batch no: 102, Loss on trainig: 1.7051, Accuracy: 0.4583
+Epoch: 15/18
+Batch no: 000, Loss on trainig: 1.0800, Accuracy: 0.6875
+Batch no: 001, Loss on trainig: 1.4805, Accuracy: 0.5938
+Batch no: 002, Loss on trainig: 1.1571, Accuracy: 0.6875
+Batch no: 003, Loss on trainig: 1.5260, Accuracy: 0.6094
+Batch no: 004, Loss on trainig: 1.2649, Accuracy: 0.6562
+Batch no: 005, Loss on trainig: 1.3269, Accuracy: 0.6406
+Batch no: 006, Loss on trainig: 1.7625, Accuracy: 0.5469
+Batch no: 007, Loss on trainig: 1.5893, Accuracy: 0.5781
+Batch no: 008, Loss on trainig: 1.2742, Accuracy: 0.6562
+Batch no: 009, Loss on trainig: 1.4007, Accuracy: 0.5938
+Batch no: 010, Loss on trainig: 1.2327, Accuracy: 0.6406
+Batch no: 011, Loss on trainig: 1.4556, Accuracy: 0.5156
+Batch no: 012, Loss on trainig: 1.1883, Accuracy: 0.6094
+Batch no: 013, Loss on trainig: 1.5687, Accuracy: 0.5781
+Batch no: 014, Loss on trainig: 1.3908, Accuracy: 0.6250
+Batch no: 015, Loss on trainig: 1.8212, Accuracy: 0.5781
+Batch no: 016, Loss on trainig: 1.4886, Accuracy: 0.5469
+Batch no: 017, Loss on trainig: 1.0935, Accuracy: 0.6875
+Batch no: 018, Loss on trainig: 1.3773, Accuracy: 0.6094
+Batch no: 019, Loss on trainig: 1.1658, Accuracy: 0.5938
+Batch no: 020, Loss on trainig: 1.2762, Accuracy: 0.6875
+Batch no: 021, Loss on trainig: 1.4297, Accuracy: 0.6094
+Batch no: 022, Loss on trainig: 1.5577, Accuracy: 0.6094
+Batch no: 023, Loss on trainig: 1.7840, Accuracy: 0.4219
+Batch no: 024, Loss on trainig: 1.5529, Accuracy: 0.5781
+Batch no: 025, Loss on trainig: 1.4078, Accuracy: 0.6094
+Batch no: 026, Loss on trainig: 1.3663, Accuracy: 0.5625
+Batch no: 027, Loss on trainig: 1.2393, Accuracy: 0.6875
+Batch no: 028, Loss on trainig: 1.1109, Accuracy: 0.7500
+Batch no: 029, Loss on trainig: 1.4276, Accuracy: 0.6094
+Batch no: 030, Loss on trainig: 1.5009, Accuracy: 0.5781
+Batch no: 031, Loss on trainig: 1.6995, Accuracy: 0.4844
+Batch no: 032, Loss on trainig: 1.3822, Accuracy: 0.6250
+Batch no: 033, Loss on trainig: 1.1511, Accuracy: 0.5781
+Batch no: 034, Loss on trainig: 1.2645, Accuracy: 0.6094
+Batch no: 035, Loss on trainig: 1.2266, Accuracy: 0.6875
+Batch no: 036, Loss on trainig: 1.3356, Accuracy: 0.6406
+Batch no: 037, Loss on trainig: 1.0767, Accuracy: 0.6875
+Batch no: 038, Loss on trainig: 1.4665, Accuracy: 0.5781
+Batch no: 039, Loss on trainig: 1.1539, Accuracy: 0.6250
+Batch no: 040, Loss on trainig: 1.7983, Accuracy: 0.5781
+Batch no: 041, Loss on trainig: 1.8553, Accuracy: 0.5156
+Batch no: 042, Loss on trainig: 1.2152, Accuracy: 0.6406
+Batch no: 043, Loss on trainig: 1.5129, Accuracy: 0.5781
+Batch no: 044, Loss on trainig: 1.7314, Accuracy: 0.4844
+Batch no: 045, Loss on trainig: 1.5251, Accuracy: 0.6094
+Batch no: 046, Loss on trainig: 1.3466, Accuracy: 0.5938
+Batch no: 047, Loss on trainig: 1.5396, Accuracy: 0.5625
+Batch no: 048, Loss on trainig: 1.4849, Accuracy: 0.5781
+Batch no: 049, Loss on trainig: 1.5235, Accuracy: 0.6094
+Batch no: 050, Loss on trainig: 1.1814, Accuracy: 0.6562
+Batch no: 051, Loss on trainig: 1.1272, Accuracy: 0.6250
+Batch no: 052, Loss on trainig: 1.3440, Accuracy: 0.5781
+Batch no: 053, Loss on trainig: 1.1192, Accuracy: 0.6875
+Batch no: 054, Loss on trainig: 1.1588, Accuracy: 0.6250
+Batch no: 055, Loss on trainig: 1.8006, Accuracy: 0.4844
+Batch no: 056, Loss on trainig: 1.1902, Accuracy: 0.6406
+Batch no: 057, Loss on trainig: 1.1691, Accuracy: 0.6875
+Batch no: 058, Loss on trainig: 1.4602, Accuracy: 0.6562
+Batch no: 059, Loss on trainig: 1.6040, Accuracy: 0.6094
+Batch no: 060, Loss on trainig: 1.4746, Accuracy: 0.5469
+Batch no: 061, Loss on trainig: 1.4035, Accuracy: 0.6094
+Batch no: 062, Loss on trainig: 1.2321, Accuracy: 0.6250
+Batch no: 063, Loss on trainig: 1.3445, Accuracy: 0.5625
+Batch no: 064, Loss on trainig: 1.1183, Accuracy: 0.6562
+Batch no: 065, Loss on trainig: 1.5907, Accuracy: 0.5312
+Batch no: 066, Loss on trainig: 1.4055, Accuracy: 0.5312
+Batch no: 067, Loss on trainig: 1.3911, Accuracy: 0.6406
+Batch no: 068, Loss on trainig: 0.8515, Accuracy: 0.8125
+Batch no: 069, Loss on trainig: 1.1509, Accuracy: 0.7188
+Batch no: 070, Loss on trainig: 1.7640, Accuracy: 0.4844
+Batch no: 071, Loss on trainig: 1.2703, Accuracy: 0.6094
+Batch no: 072, Loss on trainig: 1.5202, Accuracy: 0.5781
+Batch no: 073, Loss on trainig: 1.1660, Accuracy: 0.6562
+Batch no: 074, Loss on trainig: 1.4249, Accuracy: 0.5781
+Batch no: 075, Loss on trainig: 1.0830, Accuracy: 0.6719
+Batch no: 076, Loss on trainig: 1.3434, Accuracy: 0.5938
+Batch no: 077, Loss on trainig: 1.2990, Accuracy: 0.6250
+Batch no: 078, Loss on trainig: 0.8757, Accuracy: 0.6719
+Batch no: 079, Loss on trainig: 1.2139, Accuracy: 0.6250
+Batch no: 080, Loss on trainig: 1.3476, Accuracy: 0.5938
+Batch no: 081, Loss on trainig: 1.3732, Accuracy: 0.6094
+Batch no: 082, Loss on trainig: 1.2422, Accuracy: 0.6250
+Batch no: 083, Loss on trainig: 1.3956, Accuracy: 0.6562
+Batch no: 084, Loss on trainig: 1.3049, Accuracy: 0.6406
+Batch no: 085, Loss on trainig: 1.6536, Accuracy: 0.5938
+Batch no: 086, Loss on trainig: 1.4178, Accuracy: 0.6562
+Batch no: 087, Loss on trainig: 1.2837, Accuracy: 0.6406
+Batch no: 088, Loss on trainig: 1.2003, Accuracy: 0.6250
+Batch no: 089, Loss on trainig: 1.6898, Accuracy: 0.5781
+Batch no: 090, Loss on trainig: 1.2428, Accuracy: 0.6094
+Batch no: 091, Loss on trainig: 1.2840, Accuracy: 0.7188
+Batch no: 092, Loss on trainig: 1.4546, Accuracy: 0.5625
+Batch no: 093, Loss on trainig: 1.2774, Accuracy: 0.6094
+Batch no: 094, Loss on trainig: 1.1055, Accuracy: 0.6562
+Batch no: 095, Loss on trainig: 1.3296, Accuracy: 0.6094
+Batch no: 096, Loss on trainig: 1.4243, Accuracy: 0.6562
+Batch no: 097, Loss on trainig: 1.2000, Accuracy: 0.6875
+Batch no: 098, Loss on trainig: 1.7288, Accuracy: 0.4844
+Batch no: 099, Loss on trainig: 1.2313, Accuracy: 0.6094
+Batch no: 100, Loss on trainig: 1.1282, Accuracy: 0.7656
+Batch no: 101, Loss on trainig: 1.3153, Accuracy: 0.5625
+Batch no: 102, Loss on trainig: 1.3080, Accuracy: 0.7083
+Epoch: 16/18
+Batch no: 000, Loss on trainig: 1.5320, Accuracy: 0.5312
+Batch no: 001, Loss on trainig: 1.6714, Accuracy: 0.5312
+Batch no: 002, Loss on trainig: 1.3525, Accuracy: 0.6094
+Batch no: 003, Loss on trainig: 1.4546, Accuracy: 0.5938
+Batch no: 004, Loss on trainig: 1.4060, Accuracy: 0.6094
+Batch no: 005, Loss on trainig: 1.6083, Accuracy: 0.5625
+Batch no: 006, Loss on trainig: 1.2217, Accuracy: 0.6875
+Batch no: 007, Loss on trainig: 1.7378, Accuracy: 0.5781
+Batch no: 008, Loss on trainig: 1.3710, Accuracy: 0.6406
+Batch no: 009, Loss on trainig: 0.8919, Accuracy: 0.7188
+Batch no: 010, Loss on trainig: 1.3569, Accuracy: 0.6562
+Batch no: 011, Loss on trainig: 1.5378, Accuracy: 0.6094
+Batch no: 012, Loss on trainig: 0.8729, Accuracy: 0.7500
+Batch no: 013, Loss on trainig: 1.5302, Accuracy: 0.5938
+Batch no: 014, Loss on trainig: 1.3845, Accuracy: 0.5469
+Batch no: 015, Loss on trainig: 1.7784, Accuracy: 0.5625
+Batch no: 016, Loss on trainig: 1.4475, Accuracy: 0.5938
+Batch no: 017, Loss on trainig: 1.1154, Accuracy: 0.6719
+Batch no: 018, Loss on trainig: 1.2878, Accuracy: 0.6250
+Batch no: 019, Loss on trainig: 1.0604, Accuracy: 0.7344
+Batch no: 020, Loss on trainig: 1.0144, Accuracy: 0.7188
+Batch no: 021, Loss on trainig: 1.3414, Accuracy: 0.6250
+Batch no: 022, Loss on trainig: 1.3925, Accuracy: 0.6250
+Batch no: 023, Loss on trainig: 1.5939, Accuracy: 0.6094
+Batch no: 024, Loss on trainig: 1.5015, Accuracy: 0.5625
+Batch no: 025, Loss on trainig: 1.0096, Accuracy: 0.6875
+Batch no: 026, Loss on trainig: 1.3335, Accuracy: 0.6406
+Batch no: 027, Loss on trainig: 1.4559, Accuracy: 0.5938
+Batch no: 028, Loss on trainig: 1.6695, Accuracy: 0.6094
+Batch no: 029, Loss on trainig: 1.4853, Accuracy: 0.5938
+Batch no: 030, Loss on trainig: 1.3365, Accuracy: 0.6562
+Batch no: 031, Loss on trainig: 1.2622, Accuracy: 0.5938
+Batch no: 032, Loss on trainig: 1.5141, Accuracy: 0.6250
+Batch no: 033, Loss on trainig: 1.2570, Accuracy: 0.5625
+Batch no: 034, Loss on trainig: 1.2269, Accuracy: 0.5938
+Batch no: 035, Loss on trainig: 1.3868, Accuracy: 0.6406
+Batch no: 036, Loss on trainig: 1.0655, Accuracy: 0.6562
+Batch no: 037, Loss on trainig: 1.1540, Accuracy: 0.6406
+Batch no: 038, Loss on trainig: 1.1717, Accuracy: 0.6562
+Batch no: 039, Loss on trainig: 1.2344, Accuracy: 0.6562
+Batch no: 040, Loss on trainig: 1.1948, Accuracy: 0.5938
+Batch no: 041, Loss on trainig: 1.2016, Accuracy: 0.6094
+Batch no: 042, Loss on trainig: 1.1706, Accuracy: 0.6562
+Batch no: 043, Loss on trainig: 1.3826, Accuracy: 0.6719
+Batch no: 044, Loss on trainig: 1.4390, Accuracy: 0.5625
+Batch no: 045, Loss on trainig: 1.3576, Accuracy: 0.6250
+Batch no: 046, Loss on trainig: 1.3768, Accuracy: 0.6250
+Batch no: 047, Loss on trainig: 0.9437, Accuracy: 0.6719
+Batch no: 048, Loss on trainig: 1.4303, Accuracy: 0.6094
+Batch no: 049, Loss on trainig: 1.3178, Accuracy: 0.6250
+Batch no: 050, Loss on trainig: 1.3534, Accuracy: 0.6250
+Batch no: 051, Loss on trainig: 1.0495, Accuracy: 0.7188
+Batch no: 052, Loss on trainig: 1.3253, Accuracy: 0.6406
+Batch no: 053, Loss on trainig: 1.2249, Accuracy: 0.6562
+Batch no: 054, Loss on trainig: 1.5453, Accuracy: 0.6562
+Batch no: 055, Loss on trainig: 1.2840, Accuracy: 0.6406
+Batch no: 056, Loss on trainig: 1.3457, Accuracy: 0.5625
+Batch no: 057, Loss on trainig: 1.4224, Accuracy: 0.6719
+Batch no: 058, Loss on trainig: 1.1401, Accuracy: 0.6875
+Batch no: 059, Loss on trainig: 1.4028, Accuracy: 0.6406
+Batch no: 060, Loss on trainig: 0.9962, Accuracy: 0.6875
+Batch no: 061, Loss on trainig: 1.2117, Accuracy: 0.6562
+Batch no: 062, Loss on trainig: 1.7439, Accuracy: 0.5469
+Batch no: 063, Loss on trainig: 1.6048, Accuracy: 0.5781
+Batch no: 064, Loss on trainig: 1.1620, Accuracy: 0.6875
+Batch no: 065, Loss on trainig: 1.4735, Accuracy: 0.5312
+Batch no: 066, Loss on trainig: 1.3173, Accuracy: 0.6562
+Batch no: 067, Loss on trainig: 1.2312, Accuracy: 0.6406
+Batch no: 068, Loss on trainig: 0.8645, Accuracy: 0.7500
+Batch no: 069, Loss on trainig: 1.3043, Accuracy: 0.6562
+Batch no: 070, Loss on trainig: 1.0588, Accuracy: 0.7031
+Batch no: 071, Loss on trainig: 1.0745, Accuracy: 0.7344
+Batch no: 072, Loss on trainig: 1.5346, Accuracy: 0.5156
+Batch no: 073, Loss on trainig: 1.2693, Accuracy: 0.6562
+Batch no: 074, Loss on trainig: 1.0122, Accuracy: 0.7188
+Batch no: 075, Loss on trainig: 1.0758, Accuracy: 0.6875
+Batch no: 076, Loss on trainig: 1.7244, Accuracy: 0.5625
+Batch no: 077, Loss on trainig: 1.4085, Accuracy: 0.5625
+Batch no: 078, Loss on trainig: 1.4688, Accuracy: 0.5938
+Batch no: 079, Loss on trainig: 1.5099, Accuracy: 0.6094
+Batch no: 080, Loss on trainig: 1.2211, Accuracy: 0.5312
+Batch no: 081, Loss on trainig: 1.0918, Accuracy: 0.6875
+Batch no: 082, Loss on trainig: 1.3255, Accuracy: 0.5938
+Batch no: 083, Loss on trainig: 1.2838, Accuracy: 0.6406
+Batch no: 084, Loss on trainig: 1.4459, Accuracy: 0.5312
+Batch no: 085, Loss on trainig: 1.2440, Accuracy: 0.6562
+Batch no: 086, Loss on trainig: 1.6983, Accuracy: 0.4844
+Batch no: 087, Loss on trainig: 1.5826, Accuracy: 0.5781
+Batch no: 088, Loss on trainig: 1.1081, Accuracy: 0.7656
+Batch no: 089, Loss on trainig: 1.2156, Accuracy: 0.5469
+Batch no: 090, Loss on trainig: 1.3794, Accuracy: 0.6094
+Batch no: 091, Loss on trainig: 1.2635, Accuracy: 0.6562
+Batch no: 092, Loss on trainig: 1.4429, Accuracy: 0.6094
+Batch no: 093, Loss on trainig: 1.3472, Accuracy: 0.6406
+Batch no: 094, Loss on trainig: 1.4437, Accuracy: 0.5625
+Batch no: 095, Loss on trainig: 1.4530, Accuracy: 0.6094
+Batch no: 096, Loss on trainig: 1.1500, Accuracy: 0.7031
+Batch no: 097, Loss on trainig: 1.2216, Accuracy: 0.6406
+Batch no: 098, Loss on trainig: 1.1871, Accuracy: 0.6719
+Batch no: 099, Loss on trainig: 0.9680, Accuracy: 0.7188
+Batch no: 100, Loss on trainig: 1.8447, Accuracy: 0.5781
+Batch no: 101, Loss on trainig: 1.3831, Accuracy: 0.5781
+Batch no: 102, Loss on trainig: 1.6282, Accuracy: 0.6250
+Epoch: 17/18
+Batch no: 000, Loss on trainig: 1.3843, Accuracy: 0.6406
+Batch no: 001, Loss on trainig: 1.2983, Accuracy: 0.5781
+Batch no: 002, Loss on trainig: 1.2760, Accuracy: 0.6094
+Batch no: 003, Loss on trainig: 1.1756, Accuracy: 0.6875
+Batch no: 004, Loss on trainig: 1.5570, Accuracy: 0.6094
+Batch no: 005, Loss on trainig: 1.6027, Accuracy: 0.6250
+Batch no: 006, Loss on trainig: 1.4263, Accuracy: 0.6094
+Batch no: 007, Loss on trainig: 1.4457, Accuracy: 0.5625
+Batch no: 008, Loss on trainig: 1.1319, Accuracy: 0.6875
+Batch no: 009, Loss on trainig: 1.0865, Accuracy: 0.6406
+Batch no: 010, Loss on trainig: 1.4757, Accuracy: 0.5000
+Batch no: 011, Loss on trainig: 0.9034, Accuracy: 0.7500
+Batch no: 012, Loss on trainig: 1.0977, Accuracy: 0.6406
+Batch no: 013, Loss on trainig: 1.3053, Accuracy: 0.6562
+Batch no: 014, Loss on trainig: 1.4419, Accuracy: 0.5312
+Batch no: 015, Loss on trainig: 1.1107, Accuracy: 0.6250
+Batch no: 016, Loss on trainig: 1.5445, Accuracy: 0.6094
+Batch no: 017, Loss on trainig: 1.2414, Accuracy: 0.6875
+Batch no: 018, Loss on trainig: 1.4846, Accuracy: 0.5938
+Batch no: 019, Loss on trainig: 1.1611, Accuracy: 0.7188
+Batch no: 020, Loss on trainig: 1.3863, Accuracy: 0.6250
+Batch no: 021, Loss on trainig: 1.3211, Accuracy: 0.6250
+Batch no: 022, Loss on trainig: 1.2612, Accuracy: 0.5938
+Batch no: 023, Loss on trainig: 1.2287, Accuracy: 0.6094
+Batch no: 024, Loss on trainig: 1.5836, Accuracy: 0.5156
+Batch no: 025, Loss on trainig: 1.1627, Accuracy: 0.6719
+Batch no: 026, Loss on trainig: 0.9892, Accuracy: 0.6719
+Batch no: 027, Loss on trainig: 0.8765, Accuracy: 0.7344
+Batch no: 028, Loss on trainig: 1.4922, Accuracy: 0.6406
+Batch no: 029, Loss on trainig: 1.4067, Accuracy: 0.5938
+Batch no: 030, Loss on trainig: 1.7953, Accuracy: 0.5469
+Batch no: 031, Loss on trainig: 1.8036, Accuracy: 0.4219
+Batch no: 032, Loss on trainig: 1.2226, Accuracy: 0.6250
+Batch no: 033, Loss on trainig: 0.8950, Accuracy: 0.6875
+Batch no: 034, Loss on trainig: 1.3745, Accuracy: 0.5469
+Batch no: 035, Loss on trainig: 1.6951, Accuracy: 0.5938
+Batch no: 036, Loss on trainig: 1.3756, Accuracy: 0.5938
+Batch no: 037, Loss on trainig: 1.2158, Accuracy: 0.7031
+Batch no: 038, Loss on trainig: 1.2587, Accuracy: 0.6406
+Batch no: 039, Loss on trainig: 1.1243, Accuracy: 0.7031
+Batch no: 040, Loss on trainig: 1.3211, Accuracy: 0.5625
+Batch no: 041, Loss on trainig: 1.6117, Accuracy: 0.5312
+Batch no: 042, Loss on trainig: 1.2425, Accuracy: 0.6250
+Batch no: 043, Loss on trainig: 1.6481, Accuracy: 0.5781
+Batch no: 044, Loss on trainig: 1.0310, Accuracy: 0.7656
+Batch no: 045, Loss on trainig: 1.1337, Accuracy: 0.7031
+Batch no: 046, Loss on trainig: 1.0937, Accuracy: 0.7188
+Batch no: 047, Loss on trainig: 1.2935, Accuracy: 0.6719
+Batch no: 048, Loss on trainig: 1.4957, Accuracy: 0.5781
+Batch no: 049, Loss on trainig: 1.3180, Accuracy: 0.6562
+Batch no: 050, Loss on trainig: 0.8977, Accuracy: 0.6719
+Batch no: 051, Loss on trainig: 1.2235, Accuracy: 0.6719
+Batch no: 052, Loss on trainig: 1.2344, Accuracy: 0.6250
+Batch no: 053, Loss on trainig: 1.4646, Accuracy: 0.6406
+Batch no: 054, Loss on trainig: 1.2614, Accuracy: 0.6562
+Batch no: 055, Loss on trainig: 1.2705, Accuracy: 0.5781
+Batch no: 056, Loss on trainig: 1.3342, Accuracy: 0.6406
+Batch no: 057, Loss on trainig: 1.5212, Accuracy: 0.5625
+Batch no: 058, Loss on trainig: 1.3518, Accuracy: 0.6562
+Batch no: 059, Loss on trainig: 1.5962, Accuracy: 0.5469
+Batch no: 060, Loss on trainig: 1.3427, Accuracy: 0.6250
+Batch no: 061, Loss on trainig: 1.3742, Accuracy: 0.5625
+Batch no: 062, Loss on trainig: 1.5313, Accuracy: 0.5781
+Batch no: 063, Loss on trainig: 1.6192, Accuracy: 0.6250
+Batch no: 064, Loss on trainig: 1.3900, Accuracy: 0.5625
+Batch no: 065, Loss on trainig: 1.2374, Accuracy: 0.6719
+Batch no: 066, Loss on trainig: 1.3364, Accuracy: 0.6562
+Batch no: 067, Loss on trainig: 1.4275, Accuracy: 0.6094
+Batch no: 068, Loss on trainig: 1.4550, Accuracy: 0.6094
+Batch no: 069, Loss on trainig: 1.5065, Accuracy: 0.4844
+Batch no: 070, Loss on trainig: 1.2842, Accuracy: 0.6094
+Batch no: 071, Loss on trainig: 1.2389, Accuracy: 0.7188
+Batch no: 072, Loss on trainig: 1.6186, Accuracy: 0.6094
+Batch no: 073, Loss on trainig: 1.1847, Accuracy: 0.6406
+Batch no: 074, Loss on trainig: 1.1396, Accuracy: 0.6562
+Batch no: 075, Loss on trainig: 1.4955, Accuracy: 0.5625
+Batch no: 076, Loss on trainig: 1.2094, Accuracy: 0.6562
+Batch no: 077, Loss on trainig: 1.4978, Accuracy: 0.5938
+Batch no: 078, Loss on trainig: 0.8930, Accuracy: 0.7656
+Batch no: 079, Loss on trainig: 1.3269, Accuracy: 0.6719
+Batch no: 080, Loss on trainig: 1.2337, Accuracy: 0.6250
+Batch no: 081, Loss on trainig: 1.1454, Accuracy: 0.7031
+Batch no: 082, Loss on trainig: 1.6428, Accuracy: 0.5312
+Batch no: 083, Loss on trainig: 1.3420, Accuracy: 0.4844
+Batch no: 084, Loss on trainig: 1.5587, Accuracy: 0.5781
+Batch no: 085, Loss on trainig: 1.2539, Accuracy: 0.6719
+Batch no: 086, Loss on trainig: 1.2461, Accuracy: 0.6406
+Batch no: 087, Loss on trainig: 0.9906, Accuracy: 0.7188
+Batch no: 088, Loss on trainig: 1.4030, Accuracy: 0.6719
+Batch no: 089, Loss on trainig: 1.6207, Accuracy: 0.5781
+Batch no: 090, Loss on trainig: 1.0426, Accuracy: 0.7188
+Batch no: 091, Loss on trainig: 1.0972, Accuracy: 0.6406
+Batch no: 092, Loss on trainig: 1.3408, Accuracy: 0.6250
+Batch no: 093, Loss on trainig: 1.4737, Accuracy: 0.5312
+Batch no: 094, Loss on trainig: 1.3268, Accuracy: 0.6719
+Batch no: 095, Loss on trainig: 1.1521, Accuracy: 0.6562
+Batch no: 096, Loss on trainig: 1.4069, Accuracy: 0.5625
+Batch no: 097, Loss on trainig: 1.0667, Accuracy: 0.7031
+Batch no: 098, Loss on trainig: 1.2585, Accuracy: 0.6562
+Batch no: 099, Loss on trainig: 1.2226, Accuracy: 0.6562
+Batch no: 100, Loss on trainig: 1.1830, Accuracy: 0.6562
+Batch no: 101, Loss on trainig: 1.6263, Accuracy: 0.5938
+Batch no: 102, Loss on trainig: 0.7430, Accuracy: 0.6667
+Epoch: 18/18
+Batch no: 000, Loss on trainig: 1.3946, Accuracy: 0.6094
+Batch no: 001, Loss on trainig: 1.0634, Accuracy: 0.6562
+Batch no: 002, Loss on trainig: 1.4235, Accuracy: 0.6875
+Batch no: 003, Loss on trainig: 1.0514, Accuracy: 0.6562
+Batch no: 004, Loss on trainig: 1.2163, Accuracy: 0.5781
+Batch no: 005, Loss on trainig: 1.4504, Accuracy: 0.6719
+Batch no: 006, Loss on trainig: 1.2513, Accuracy: 0.5781
+Batch no: 007, Loss on trainig: 1.4499, Accuracy: 0.6406
+Batch no: 008, Loss on trainig: 1.6585, Accuracy: 0.5625
+Batch no: 009, Loss on trainig: 1.6319, Accuracy: 0.5469
+Batch no: 010, Loss on trainig: 1.2175, Accuracy: 0.6875
+Batch no: 011, Loss on trainig: 1.1766, Accuracy: 0.6719
+Batch no: 012, Loss on trainig: 1.5372, Accuracy: 0.6094
+Batch no: 013, Loss on trainig: 1.4284, Accuracy: 0.6250
+Batch no: 014, Loss on trainig: 1.3484, Accuracy: 0.6406
+Batch no: 015, Loss on trainig: 1.4757, Accuracy: 0.5312
+Batch no: 016, Loss on trainig: 1.2162, Accuracy: 0.6094
+Batch no: 017, Loss on trainig: 1.3450, Accuracy: 0.6250
+Batch no: 018, Loss on trainig: 1.1405, Accuracy: 0.6719
+Batch no: 019, Loss on trainig: 1.3767, Accuracy: 0.6406
+Batch no: 020, Loss on trainig: 1.2655, Accuracy: 0.6406
+Batch no: 021, Loss on trainig: 0.8549, Accuracy: 0.7656
+Batch no: 022, Loss on trainig: 1.3193, Accuracy: 0.5625
+Batch no: 023, Loss on trainig: 1.1098, Accuracy: 0.6875
+Batch no: 024, Loss on trainig: 1.1579, Accuracy: 0.7031
+Batch no: 025, Loss on trainig: 1.6575, Accuracy: 0.5312
+Batch no: 026, Loss on trainig: 1.0425, Accuracy: 0.6875
+Batch no: 027, Loss on trainig: 1.5050, Accuracy: 0.5469
+Batch no: 028, Loss on trainig: 1.2505, Accuracy: 0.6562
+Batch no: 029, Loss on trainig: 1.3038, Accuracy: 0.6406
+Batch no: 030, Loss on trainig: 1.2097, Accuracy: 0.6719
+Batch no: 031, Loss on trainig: 1.2612, Accuracy: 0.5781
+Batch no: 032, Loss on trainig: 1.4717, Accuracy: 0.5312
+Batch no: 033, Loss on trainig: 1.5201, Accuracy: 0.5625
+Batch no: 034, Loss on trainig: 1.1744, Accuracy: 0.6719
+Batch no: 035, Loss on trainig: 1.2047, Accuracy: 0.6250
+Batch no: 036, Loss on trainig: 1.0459, Accuracy: 0.7031
+Batch no: 037, Loss on trainig: 1.3175, Accuracy: 0.6094
+Batch no: 038, Loss on trainig: 1.4623, Accuracy: 0.5938
+Batch no: 039, Loss on trainig: 1.8677, Accuracy: 0.5312
+Batch no: 040, Loss on trainig: 0.9962, Accuracy: 0.7031
+Batch no: 041, Loss on trainig: 1.0797, Accuracy: 0.7031
+Batch no: 042, Loss on trainig: 1.2156, Accuracy: 0.6406
+Batch no: 043, Loss on trainig: 1.1110, Accuracy: 0.6406
+Batch no: 044, Loss on trainig: 0.9565, Accuracy: 0.6875
+Batch no: 045, Loss on trainig: 1.6398, Accuracy: 0.5781
+Batch no: 046, Loss on trainig: 0.9295, Accuracy: 0.7500
+Batch no: 047, Loss on trainig: 1.3317, Accuracy: 0.6406
+Batch no: 048, Loss on trainig: 1.0472, Accuracy: 0.7188
+Batch no: 049, Loss on trainig: 1.5341, Accuracy: 0.6250
+Batch no: 050, Loss on trainig: 1.1927, Accuracy: 0.6562
+Batch no: 051, Loss on trainig: 1.3827, Accuracy: 0.5781
+Batch no: 052, Loss on trainig: 1.2140, Accuracy: 0.6562
+Batch no: 053, Loss on trainig: 1.2500, Accuracy: 0.6875
+Batch no: 054, Loss on trainig: 1.4215, Accuracy: 0.6875
+Batch no: 055, Loss on trainig: 1.3443, Accuracy: 0.6562
+Batch no: 056, Loss on trainig: 1.1071, Accuracy: 0.5938
+Batch no: 057, Loss on trainig: 1.1493, Accuracy: 0.6719
+Batch no: 058, Loss on trainig: 1.6210, Accuracy: 0.6250
+Batch no: 059, Loss on trainig: 1.2606, Accuracy: 0.6875
+Batch no: 060, Loss on trainig: 1.5473, Accuracy: 0.5781
+Batch no: 061, Loss on trainig: 1.3205, Accuracy: 0.6562
+Batch no: 062, Loss on trainig: 1.4761, Accuracy: 0.5781
+Batch no: 063, Loss on trainig: 0.9135, Accuracy: 0.7031
+Batch no: 064, Loss on trainig: 1.2297, Accuracy: 0.6875
+Batch no: 065, Loss on trainig: 1.0365, Accuracy: 0.6875
+Batch no: 066, Loss on trainig: 1.5120, Accuracy: 0.5781
+Batch no: 067, Loss on trainig: 1.1360, Accuracy: 0.6562
+Batch no: 068, Loss on trainig: 1.3588, Accuracy: 0.6406
+Batch no: 069, Loss on trainig: 1.2295, Accuracy: 0.5938
+Batch no: 070, Loss on trainig: 1.3818, Accuracy: 0.6094
+Batch no: 071, Loss on trainig: 1.3598, Accuracy: 0.6250
+Batch no: 072, Loss on trainig: 1.2536, Accuracy: 0.5781
+Batch no: 073, Loss on trainig: 1.2940, Accuracy: 0.5938
+Batch no: 074, Loss on trainig: 1.7890, Accuracy: 0.4844
+Batch no: 075, Loss on trainig: 1.2713, Accuracy: 0.5938
+Batch no: 076, Loss on trainig: 1.3473, Accuracy: 0.6406
+Batch no: 077, Loss on trainig: 1.5781, Accuracy: 0.5625
+Batch no: 078, Loss on trainig: 1.0513, Accuracy: 0.7031
+Batch no: 079, Loss on trainig: 1.4266, Accuracy: 0.6250
+Batch no: 080, Loss on trainig: 1.5158, Accuracy: 0.5938
+Batch no: 081, Loss on trainig: 0.9240, Accuracy: 0.6562
+Batch no: 082, Loss on trainig: 1.3810, Accuracy: 0.6250
+Batch no: 083, Loss on trainig: 1.0191, Accuracy: 0.7188
+Batch no: 084, Loss on trainig: 1.4241, Accuracy: 0.6406
+Batch no: 085, Loss on trainig: 1.3350, Accuracy: 0.6250
+Batch no: 086, Loss on trainig: 1.3204, Accuracy: 0.5938
+Batch no: 087, Loss on trainig: 1.4770, Accuracy: 0.5781
+Batch no: 088, Loss on trainig: 1.4652, Accuracy: 0.5000
+Batch no: 089, Loss on trainig: 1.7325, Accuracy: 0.5000
+Batch no: 090, Loss on trainig: 1.4053, Accuracy: 0.6406
+Batch no: 091, Loss on trainig: 1.4914, Accuracy: 0.6094
+Batch no: 092, Loss on trainig: 1.1584, Accuracy: 0.6406
+Batch no: 093, Loss on trainig: 1.6848, Accuracy: 0.5469
+Batch no: 094, Loss on trainig: 1.4375, Accuracy: 0.5469
+Batch no: 095, Loss on trainig: 0.9989, Accuracy: 0.6875
+Batch no: 096, Loss on trainig: 0.9243, Accuracy: 0.7344
+Batch no: 097, Loss on trainig: 1.4770, Accuracy: 0.5781
+Batch no: 098, Loss on trainig: 1.3569, Accuracy: 0.6562
+Batch no: 099, Loss on trainig: 1.2316, Accuracy: 0.6250
+Batch no: 100, Loss on trainig: 1.4165, Accuracy: 0.6094
+Batch no: 101, Loss on trainig: 1.3355, Accuracy: 0.6562
+Batch no: 102, Loss on trainig: 1.0216, Accuracy: 0.7500
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="26">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Do validation on the test set</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Validation step</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>model.<span class="bu">eval</span>()</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>valid_loss <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> inputs, labels <span class="kw">in</span> valid_loader:</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        inputs, labels <span class="op">=</span> inputs.to(device), labels.to(device)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        log_ps <span class="op">=</span> model(inputs)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        batch_loss <span class="op">=</span> criterion(log_ps, labels)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        valid_loss <span class="op">+=</span> batch_loss.item()</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Calculate accuracy</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        ps <span class="op">=</span> torch.exp(log_ps)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        top_p, top_class <span class="op">=</span> ps.topk(<span class="dv">1</span>, dim<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        equals <span class="op">=</span> top_class <span class="op">==</span> labels.view(<span class="op">*</span>top_class.shape)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        accuracy <span class="op">+=</span> torch.mean(equals.<span class="bu">type</span>(torch.FloatTensor)).item()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Validation Batch number: 000, Validation: Loss: 0.5003, Accuracy: 0.8281
+Validation Batch number: 001, Validation: Loss: 0.5844, Accuracy: 0.7969
+Validation Batch number: 002, Validation: Loss: 0.6553, Accuracy: 0.8281
+Validation Batch number: 003, Validation: Loss: 0.4439, Accuracy: 0.8750
+Validation Batch number: 004, Validation: Loss: 0.8773, Accuracy: 0.8281
+Validation Batch number: 005, Validation: Loss: 0.3411, Accuracy: 0.9219
+Validation Batch number: 006, Validation: Loss: 0.5510, Accuracy: 0.8594
+Validation Batch number: 007, Validation: Loss: 0.5053, Accuracy: 0.8750
+Validation Batch number: 008, Validation: Loss: 0.5915, Accuracy: 0.8438
+Validation Batch number: 009, Validation: Loss: 0.4701, Accuracy: 0.8906
+Validation Batch number: 010, Validation: Loss: 0.5179, Accuracy: 0.8281
+Validation Batch number: 011, Validation: Loss: 0.4853, Accuracy: 0.8594
+Validation Batch number: 012, Validation: Loss: 0.7008, Accuracy: 0.8200
+</code></pre>
+</div>
+</div>
+<section id="testing-your-network" class="cell markdown">
+<h2>Testing your network</h2>
+<p>It's good practice to test your trained network on test data, images
+the network has never seen either in training or validation. This will
+give you a good estimate for the model's performance on completely new
+images. Run the test images through the network and measure the
+accuracy, the same way you did validation. You should be able to reach
+around 70% accuracy on the test set if the model has been trained
+well.</p>
+</section>
+<div class="cell code" data-execution_count="27">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do validation on the test set</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>correct,total <span class="op">=</span> <span class="dv">0</span>,<span class="dv">0</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> torch.no_grad():</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    model.<span class="bu">eval</span>()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> data <span class="kw">in</span> train_loader:</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>        images, labels <span class="op">=</span> data</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        images, labels <span class="op">=</span> images.to(<span class="st">&#39;cuda&#39;</span>), labels.to(<span class="st">&#39;cuda&#39;</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        outputs <span class="op">=</span> model(images)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>        _, predicted <span class="op">=</span> torch.<span class="bu">max</span>(outputs.data, <span class="dv">1</span>)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        total <span class="op">+=</span> labels.size(<span class="dv">0</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        correct <span class="op">+=</span> (predicted <span class="op">==</span> labels).<span class="bu">sum</span>().item()</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Accuracy on test images is: </span><span class="sc">%d%%</span><span class="st">&#39;</span> <span class="op">%</span> (<span class="dv">100</span> <span class="op">*</span> correct <span class="op">/</span> total))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy on test images is: 81%
+</code></pre>
+</div>
+</div>
+<section id="save-the-checkpoint" class="cell markdown">
+<h2>Save the checkpoint</h2>
+<p>Now that your network is trained, save the model so you can load it
+later for making predictions. You probably want to save other things
+such as the mapping of classes to indices which you get from one of the
+image datasets: <code>image_datasets['train'].class_to_idx</code>. You
+can attach this to the model as an attribute which makes inference
+easier later on.</p>
+<p><code>model.class_to_idx = image_datasets['train'].class_to_idx</code></p>
+<p>Remember that you'll want to completely rebuild the model later so
+you can use it for inference. Make sure to include any information you
+need in the checkpoint. If you want to load the model and keep training,
+you'll want to save the number of epochs as well as the optimizer state,
+<code>optimizer.state_dict</code>. You'll likely want to use this
+trained model in the next part of the project, so best to save it
+now.</p>
+</section>
+<div class="cell code" data-execution_count="28">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Save the checkpoint </span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>model.class_to_idx <span class="op">=</span> image_datasets[<span class="st">&#39;train&#39;</span>].class_to_idx</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>torch.save({<span class="st">&#39;structure&#39;</span> :<span class="st">&#39;alexnet&#39;</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;hidden_layer1&#39;</span>:<span class="dv">120</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;droupout&#39;</span>:<span class="fl">0.5</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;epochs&#39;</span>:<span class="dv">12</span>,</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;state_dict&#39;</span>:model.state_dict(),</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;class_to_idx&#39;</span>:model.class_to_idx,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;optimizer_dict&#39;</span>:optimizer.state_dict()},</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;checkpoint.pth&#39;</span>)</span></code></pre></div>
+</div>
+<section id="loading-the-checkpoint" class="cell markdown">
+<h2>Loading the checkpoint</h2>
+<p>At this point it's good to write a function that can load a
+checkpoint and rebuild the model. That way you can come back to this
+project and keep working on it without having to retrain the
+network.</p>
+</section>
+<div class="cell code" data-execution_count="29">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Write a function that loads a checkpoint and rebuilds the model</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>checkpoint <span class="op">=</span> torch.load(<span class="st">&#39;checkpoint.pth&#39;</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">#download pretrained model</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>model<span class="op">=</span>models.vgg16(pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#to freeze parameters</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> param <span class="kw">in</span> model.parameters():</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    param.requires_grad <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co">#load from checkpoint</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>model.class_to_idx <span class="op">=</span> checkpoint[<span class="st">&#39;class_to_idx&#39;</span>]</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>model.load_state_dict(checkpoint[<span class="st">&#39;state_dict&#39;</span>])</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> model</span></code></pre></div>
+</div>
+<section id="inference-for-classification" class="cell markdown">
+<h1>Inference for classification</h1>
+<p>Now you'll write a function to use a trained network for inference.
+That is, you'll pass an image into the network and predict the class of
+the flower in the image. Write a function called <code>predict</code>
+that takes an image and a model, then returns the top <span
+class="math inline"><em>K</em></span> most likely classes along with the
+probabilities. It should look like</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>probs, classes <span class="op">=</span> predict(image_path, model)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(probs)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classes)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [ <span class="fl">0.01558163</span>  <span class="fl">0.01541934</span>  <span class="fl">0.01452626</span>  <span class="fl">0.01443549</span>  <span class="fl">0.01407339</span>]</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [<span class="st">&#39;70&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;45&#39;</span>, <span class="st">&#39;62&#39;</span>, <span class="st">&#39;55&#39;</span>]</span></code></pre></div>
+<p>First you'll need to handle processing the input image such that it
+can be used in your network.</p>
+<h2 id="image-preprocessing">Image Preprocessing</h2>
+<p>You'll want to use <code>PIL</code> to load the image (<a
+href="https://pillow.readthedocs.io/en/latest/reference/Image.html">documentation</a>).
+It's best to write a function that preprocesses the image so it can be
+used as input for the model. This function should process the images in
+the same manner used for training.</p>
+<p>First, resize the images where the shortest side is 256 pixels,
+keeping the aspect ratio. This can be done with the <a
+href="http://pillow.readthedocs.io/en/3.1.x/reference/Image.html#PIL.Image.Image.thumbnail"><code>thumbnail</code></a>
+or <a
+href="http://pillow.readthedocs.io/en/3.1.x/reference/Image.html#PIL.Image.Image.thumbnail"><code>resize</code></a>
+methods. Then you'll need to crop out the center 224x224 portion of the
+image.</p>
+<p>Color channels of images are typically encoded as integers 0-255, but
+the model expected floats 0-1. You'll need to convert the values. It's
+easiest with a Numpy array, which you can get from a PIL image like so
+<code>np_image = np.array(pil_image)</code>.</p>
+<p>As before, the network expects the images to be normalized in a
+specific way. For the means, it's <code>[0.485, 0.456, 0.406]</code> and
+for the standard deviations <code>[0.229, 0.224, 0.225]</code>. You'll
+want to subtract the means from each color channel, then divide by the
+standard deviation.</p>
+<p>And finally, PyTorch expects the color channel to be the first
+dimension but it's the third dimension in the PIL image and Numpy array.
+You can reorder dimensions using <a
+href="https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.ndarray.transpose.html"><code>ndarray.transpose</code></a>.
+The color channel needs to be first and retain the order of the other
+two dimensions.</p>
+</section>
+<div class="cell code" data-execution_count="30">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Process a PIL image for use in a PyTorch model</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_image(image):</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">&#39;&#39;&#39; Scales, crops, and normalizes a PIL image for a PyTorch model,</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">        returns an Numpy array</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co">    &#39;&#39;&#39;</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> PIL.Image.<span class="bu">open</span>(image)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get original dimensions</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    original_width, original_height <span class="op">=</span> img.size</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Find shorter size and create settings to crop shortest side to 256</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> original_width <span class="op">&lt;</span> original_height:</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        size<span class="op">=</span>[<span class="dv">256</span>, <span class="dv">256</span><span class="op">**</span><span class="dv">600</span>]</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: </span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>        size<span class="op">=</span>[<span class="dv">256</span><span class="op">**</span><span class="dv">600</span>, <span class="dv">256</span>]</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    img.thumbnail(size)</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    center <span class="op">=</span> original_width<span class="op">/</span><span class="dv">4</span>, original_height<span class="op">/</span><span class="dv">4</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    left, top, right, bottom <span class="op">=</span> center[<span class="dv">0</span>]<span class="op">-</span>(<span class="dv">244</span><span class="op">/</span><span class="dv">2</span>), center[<span class="dv">1</span>]<span class="op">-</span>(<span class="dv">244</span><span class="op">/</span><span class="dv">2</span>), center[<span class="dv">0</span>]<span class="op">+</span>(<span class="dv">244</span><span class="op">/</span><span class="dv">2</span>), center[<span class="dv">1</span>]<span class="op">+</span>(<span class="dv">244</span><span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> img.crop((left, top, right, bottom))</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    numpy_img <span class="op">=</span> np.array(img)<span class="op">/</span><span class="dv">255</span> </span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Normalize each color channel</span></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    mean <span class="op">=</span> [<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>]</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>    std <span class="op">=</span> [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>]</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>    numpy_img <span class="op">=</span> (numpy_img<span class="op">-</span>mean)<span class="op">/</span>std</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Set the color to the first channel</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>    numpy_img <span class="op">=</span> numpy_img.transpose(<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> numpy_img</span></code></pre></div>
+</div>
+<div class="cell markdown">
+<p>To check your work, the function below converts a PyTorch tensor and
+displays it in the notebook. If your <code>process_image</code> function
+works, running the output through this function should return the
+original image (except for the cropped out portions).</p>
+</div>
+<div class="cell code" data-execution_count="31">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> imshow(image, ax<span class="op">=</span><span class="va">None</span>, title<span class="op">=</span><span class="va">None</span>):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#img for tensor</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> ax <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>        fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># PyTorch tensors assume the color channel is the first dimension</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># but matplotlib assumes is the third dimension</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> image.transpose((<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">0</span>))   </span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Undo preprocessing</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>    mean <span class="op">=</span> np.array([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>])</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    std <span class="op">=</span> np.array([<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> std <span class="op">*</span> image <span class="op">+</span> mean</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Image needs to be clipped between 0 and 1 or it looks like noise when displayed</span></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>    image <span class="op">=</span> np.clip(image, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>    ax.imshow(image)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> ax</span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>imshow(process_image(<span class="st">&quot;flowers/test/9/image_06413.jpg&quot;</span>))</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a>imshow(process_image(<span class="st">&quot;flowers/test/37/image_03734.jpg&quot;</span>))</span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a>imshow(process_image(<span class="st">&quot;flowers/test/10/image_07090.jpg&quot;</span>))</span></code></pre></div>
+<div class="output execute_result" data-execution_count="31">
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7fe08a078278&gt;</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_a84af31d69384d9db79c39084b492d45/58934451d422c5342a3b14cf48dbe1bdd4d94816.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_a84af31d69384d9db79c39084b492d45/bb606e523793a44c4c73af22b1be67578a035196.png" /></p>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_a84af31d69384d9db79c39084b492d45/43f3133631067b15dfd39d81a27c303adc375e8e.png" /></p>
+</div>
+</div>
+<section id="class-prediction" class="cell markdown">
+<h2>Class Prediction</h2>
+<p>Once you can get images in the correct format, it's time to write a
+function for making predictions with your model. A common practice is to
+predict the top 5 or so (usually called top-<span
+class="math inline"><em>K</em></span>) most probable classes. You'll
+want to calculate the class probabilities then find the <span
+class="math inline"><em>K</em></span> largest values.</p>
+<p>To get the top <span class="math inline"><em>K</em></span> largest
+values in a tensor use <a
+href="http://pytorch.org/docs/master/torch.html#torch.topk"><code>x.topk(k)</code></a>.
+This method returns both the highest <code>k</code> probabilities and
+the indices of those probabilities corresponding to the classes. You
+need to convert from these indices to the actual class labels using
+<code>class_to_idx</code> which hopefully you added to the model or from
+an <code>ImageFolder</code> you used to load the data (<a
+href="#Save-the-checkpoint">see here</a>). Make sure to invert the
+dictionary so you get a mapping from index to class as well.</p>
+<p>Again, this method should take a path to an image and a model
+checkpoint, then return the probabilities and classes.</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>probs, classes <span class="op">=</span> predict(image_path, model)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(probs)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classes)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [ <span class="fl">0.01558163</span>  <span class="fl">0.01541934</span>  <span class="fl">0.01452626</span>  <span class="fl">0.01443549</span>  <span class="fl">0.01407339</span>]</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> [<span class="st">&#39;70&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;45&#39;</span>, <span class="st">&#39;62&#39;</span>, <span class="st">&#39;55&#39;</span>]</span></code></pre></div>
+</section>
+<div class="cell code" data-execution_count="32">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_image(image_path):</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Scales, crops, and normalizes a PIL image for a PyTorch model,</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co">    returns a Tensor.</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define image transformations</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    transform <span class="op">=</span> transforms.Compose([</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>        transforms.Resize(<span class="dv">256</span>),</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>        transforms.CenterCrop(<span class="dv">224</span>),</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        transforms.ToTensor(),</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>        transforms.Normalize([<span class="fl">0.485</span>, <span class="fl">0.456</span>, <span class="fl">0.406</span>], [<span class="fl">0.229</span>, <span class="fl">0.224</span>, <span class="fl">0.225</span>])</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>    ])</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Open the image</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> Image.<span class="bu">open</span>(image_path)</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Apply transformations</span></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> transform(img)</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> img</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predict(image_path, model, top_k<span class="op">=</span><span class="dv">5</span>, device<span class="op">=</span><span class="st">&#39;cuda&#39;</span>):</span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a><span class="co">    Predict the class (or classes) of an image using a trained deep learning model.</span></span>
+<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the image</span></span>
+<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> process_image(image_path)</span>
+<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a batch dimension</span></span>
+<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a>    img <span class="op">=</span> img.unsqueeze(<span class="dv">0</span>).to(device)</span>
+<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Set the model to evaluation mode</span></span>
+<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a>    model.<span class="bu">eval</span>()</span>
+<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Get the model&#39;s predictions</span></span>
+<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a>        output <span class="op">=</span> model(img)</span>
+<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a>        probabilities <span class="op">=</span> torch.exp(output)  <span class="co"># Convert log probabilities to probabilities</span></span>
+<span id="cb21-41"><a href="#cb21-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the top K probabilities and indices</span></span>
+<span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a>    top_probs, top_indices <span class="op">=</span> probabilities.topk(top_k)</span>
+<span id="cb21-44"><a href="#cb21-44" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-45"><a href="#cb21-45" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Move to CPU and convert to numpy for further processing</span></span>
+<span id="cb21-46"><a href="#cb21-46" aria-hidden="true" tabindex="-1"></a>    top_probs <span class="op">=</span> top_probs.cpu().numpy()[<span class="dv">0</span>]</span>
+<span id="cb21-47"><a href="#cb21-47" aria-hidden="true" tabindex="-1"></a>    top_indices <span class="op">=</span> top_indices.cpu().numpy()[<span class="dv">0</span>]</span>
+<span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Map indices to classes using the model&#39;s `class_to_idx` attribute</span></span>
+<span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a>    idx_to_class <span class="op">=</span> {idx: cls <span class="cf">for</span> cls, idx <span class="kw">in</span> model.class_to_idx.items()}</span>
+<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a>    top_classes <span class="op">=</span> [idx_to_class[idx] <span class="cf">for</span> idx <span class="kw">in</span> top_indices]</span>
+<span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-53"><a href="#cb21-53" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> top_probs, top_classes</span></code></pre></div>
+</div>
+<section id="sanity-checking" class="cell markdown">
+<h2>Sanity Checking</h2>
+<p>Now that you can use a trained model for predictions, check to make
+sure it makes sense. Even if the testing accuracy is high, it's always
+good to check that there aren't obvious bugs. Use
+<code>matplotlib</code> to plot the probabilities for the top 5 classes
+as a bar graph, along with the input image. It should look like
+this:</p>
+<p><img src='assets/inference_example.png' width=300px></p>
+<p>You can convert from the class integer encoding to actual flower
+names with the <code>cat_to_name.json</code> file (should have been
+loaded earlier in the notebook). To show a PyTorch tensor as an image,
+use the <code>imshow</code> function defined above.</p>
+</section>
+<div class="cell code" data-execution_count="33">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">TODO</span><span class="co">: Display an image along with the top 5 classes</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define image path</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>image_path <span class="op">=</span> <span class="st">&quot;flowers/test/37/image_03734.jpg&quot;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up plot</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">6</span>,<span class="dv">10</span>))</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.subplot(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Set up title</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>flower_num <span class="op">=</span> image_path.split(<span class="st">&#39;/&#39;</span>)[<span class="dv">2</span>]</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>title_ <span class="op">=</span> cat_to_name[flower_num]</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot flower</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> process_image(image_path)</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>imshow(img, ax, title <span class="op">=</span> title_)<span class="op">;</span></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Make prediction</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>probs, labs, flowers <span class="op">=</span> predict(image_path, model) </span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot bar chart</span></span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>probs, y<span class="op">=</span>flowers, color<span class="op">=</span>sns.color_palette()[<span class="dv">0</span>])<span class="op">;</span></span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_a84af31d69384d9db79c39084b492d45/ccbaee1adaeea69d7275ce49d5db4554f9edfbbe.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="34">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>image_path <span class="op">=</span> <span class="st">&quot;flowers/test/9/image_06413.jpg&quot;</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize <span class="op">=</span> (<span class="dv">6</span>,<span class="dv">10</span>))</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> plt.subplot(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">1</span>)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>flower_num <span class="op">=</span> image_path.split(<span class="st">&#39;/&#39;</span>)[<span class="dv">2</span>]</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>title_ <span class="op">=</span> cat_to_name[flower_num]</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> process_image(image_path)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>imshow(img, ax, title <span class="op">=</span> title_)<span class="op">;</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>probs, labs, flowers <span class="op">=</span> predict(image_path, model) </span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">1</span>,<span class="dv">2</span>)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>probs, y<span class="op">=</span>flowers, color<span class="op">=</span>sns.color_palette()[<span class="dv">0</span>])<span class="op">;</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_a84af31d69384d9db79c39084b492d45/7ffb7eceef6cb9f57ad0a0fe26e7684e9b8d996f.png" /></p>
+</div>
+</div>
+</body>
+</html>
