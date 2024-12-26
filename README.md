@@ -1,10 +1,10 @@
-# **Image Classifier with PyTorch**
+# **Image Classifier with PyTorch🖼️**
 
 This project demonstrates how to build a state-of-the-art **image classification application** using PyTorch. The application allows users to train a neural network on a dataset of flower images, save the trained model, and predict flower categories for new images. The project also features a command-line interface for ease of use.
 
 ---
 
-## **Dataset**
+## **Dataset🌸**
 
 The project uses the [Flowers 102 dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html), which contains images of 102 flower categories. The dataset is ideal for demonstrating the power of transfer learning and deep neural networks.
 
